@@ -1,0 +1,259 @@
+{
+  "type": "object",
+  "properties": {
+    "siteId": {
+      "type": "string"      
+    },
+    "siteName": {    
+      "type": "string"
+    },
+    "customerId": {     
+      "type": "string"
+    },
+    "siteType": {     
+      "type": "string"
+    },
+    "customerGroupId": {     
+      "type": "string"
+    },
+    "numberOfEmployees": {     
+      "type": "integer"
+    },
+    "sitePhoneNumber": {    
+      "type": "string"
+    },
+    "siteAddress": {   
+      "type": "object",
+      "properties": {
+        "addressLine1": {        
+          "type": "string"
+        },
+        "addressLine2": {        
+          "type": "string"
+        },
+        "city": {         
+          "type": "string"
+        },
+        "state": {        
+          "type": "string"
+        },
+        "country": {         
+          "type": "string"
+        },
+        "zipCode": {         
+          "type": "string"
+        },
+        "latitude": {         
+          "type": "string"
+        },
+        "longitude": {        
+          "type": "string"
+        },
+        "naxId": {         
+          "type": "string"
+        }
+      }
+    },
+    "siteContacts": {     
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "contactId": {          
+            "type": "string"
+          },
+          "firstName": {          
+            "type": "string"
+          },
+          "lastName": {
+             
+            "type": "string"
+          },
+          "middleName": {
+             
+            "type": "string"
+          },
+          "displayName": {
+             
+            "type": "string"
+          },
+          "title": {
+            
+            "type": "string"
+          },
+          "role": {
+             
+            "type": "string"
+          },
+          "roleId": {
+             
+            "type": "string"
+          },
+          "preferredContactMethod": {
+             
+            "type": "string"
+          },
+          "preferredContactPeriod": {
+             
+            "type": "string"
+          },
+          "preferredContactTime": {
+             
+            "type": "string"
+          },
+          "preferredLanguage": {
+             
+            "type": "string"
+          },
+          "contactMethods": {
+             
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "contactMethodKey": {
+                  
+                  "type": "string"
+                },
+                "preferred": {
+                   
+                  "type": "boolean"
+                },
+                "contactMethodType": {
+                   
+                  "type": "string"
+                },
+                "emailAddress": {
+                   
+                  "type": "string"
+                },
+                "extension": {
+                   
+                  "type": "string"
+                },
+                "number": {
+                   
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "market": {
+       
+      "type": "string"
+    },
+    "submarket": {
+       
+      "type": "string"
+    },
+    "region": {
+      
+      "type": "string"
+    },
+    "division": {
+      
+      "type": "string"
+    },
+    "regionDescription": {
+      
+      "type": "string"
+    },
+    "divisionDescription": {
+       
+      "type": "string"
+    },
+    "areaType": {
+       
+      "type": "string"
+    },
+    "timeZoneInfo": {
+      "type": "object",
+      "properties": {
+        "timeZone": {
+          "type": "string"
+           
+        },
+        "utc": {
+          "type": "integer"
+        },
+        "dst": {
+          "type": "boolean"
+        },
+        "zip5": {
+          "type": "string"
+        }
+      }
+    },
+    "marketInfo": {
+      "type": "object",
+      "properties": {
+        "DSTMarketID": {
+          "type": "object",
+          "properties": {
+            "franchiseTaxArea": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "billingDetailsInfo": {
+      "type": "object",
+      "properties": {
+        "csgDetails": {
+          "type": "object",
+          "properties": {
+            "technicianArea": {
+              "type": "string"
+            },
+            "houseKey": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "locationIdentifierInfo": {
+      "type": "object",
+      "properties": {
+        "eLocId": {
+          "type": "string"
+        },
+        "naxId": {
+          "type": "string"
+        }
+      }
+    },
+    "networkConnectivityInfo": {
+      "type": "object",
+      "properties": {
+        "CMTS_FQDN": {
+          "type": "string"
+        },
+        "fiberNodeName": {
+          "type": "string"
+        }
+      }
+    },
+    "siteSignageName": {    
+      "type": "string"
+    },
+    "errors": {     
+      "items": {
+        "properties": {
+          "code": {
+            "type": "string"
+          },
+          "message": {
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "type": "array"
+    }
+  }
+}

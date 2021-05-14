@@ -1,0 +1,615 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"description": "",
+	"type": "object",
+	"properties": {
+		"source": {
+			"type": "string"
+
+		},
+		"recordStatus": {
+			"type": "string"
+
+		},
+		"customerId": {
+			"type": "string"
+
+		},
+		"customerLegalName": {
+			"type": "string"
+
+		},
+		"state": {
+			"type": "string"
+
+		},
+		"admBusOrgId": {
+			"type": "string"
+
+		},
+		"athenaId": {
+			"type": "string"
+
+		},
+
+		"businessRelationship": {
+			"type": "string"
+
+		},
+		"businessTaxId": {
+			"type": "string"
+
+		},
+		"classification": {
+			"type": "string"
+
+		},
+		"cmCustomerSourceId": {
+			"type": "string"
+
+		},
+		"customerAcquisitionDate": {
+			"type": "string"
+
+		},
+		"customerName": {
+			"type": "string"
+
+		},
+		"customerStatus": {
+			"type": "string"
+
+		},
+		"disconnectDate": {
+			"type": "string"
+
+		},
+		"extId": {
+			"type": "string"
+
+		},
+		"franchisingIndicator": {
+			"type": "string"
+
+		},
+		"migratedDate": {
+			"type": "string"
+
+		},
+		"migratedIndicator": {
+			"type": "string"
+
+		},
+		"odsEmployeeId": {
+			"type": "string"
+
+		},
+
+		"relationshipOwner": {
+			"type": "string"
+
+		},
+
+		"subClassification": {
+			"type": "string"
+
+		},
+		"svCustomerBan": {
+			"type": "string"
+
+		},
+		"svRootBan": {
+			"type": "string"
+
+		},
+		"tsp": {
+			"type": "string"
+
+		},
+
+		"parentCustomerId": {
+			"type": "string"
+
+		},
+		"odsCustomerTypeId": {
+			"type": "string"
+
+		},
+		"odsCustomerTypeDesc": {
+			"type": "string"
+
+		},
+		"odsCustomerSubTypeId": {
+			"type": "string"
+
+		},
+		"odsCustomerSubTypeDesc": {
+			"type": "string"
+
+		},
+		"odsIndustryTypeId": {
+			"type": "string"
+
+		},
+		"odsIndustryTypeDesc": {
+			"type": "string"
+
+		},
+		"odsSubIndustryTypeId": {
+			"type": "string"
+
+		},
+		"odsSubIndustryTypeDesc": {
+			"type": "string"
+
+		},
+		"odsCurrencyCodeId": {
+			"type": "string"
+
+		},
+		"odsCurrencyCodeName": {
+			"type": "string"
+
+		},
+		"odsBillCycleId": {
+			"type": "string"
+
+		},
+		"odsBillCycleDesc": {
+			"type": "string"
+
+		},
+		"specialPopulationId": {
+			"type": "string"
+
+		},
+		"specialPopulationDesc": {
+			"type": "string"
+
+		},
+		"totalSites": {
+			"type": "string"
+
+		},
+		"customerServiceError": {
+			"type": "object",
+			"properties": {
+				"errors": {
+					"type": "array",
+					"uniqueItems": true,
+					"minItems": 1,
+					"items": {
+						"properties": {
+							"code": {
+								"type": "string"
+
+							},
+							"message": {
+								"type": "string"
+
+							}
+						}
+					}
+				}
+			}
+		},
+		"addresses": {
+			"type": "array",
+			"minItems": 1,
+			"items": {
+				"properties": {
+					"source": {
+						"type": "string"
+
+					},
+					"referenceId": {
+						"type": "string"
+
+					},
+					"addressId": {
+						"type": "string"
+
+					},
+					"role": {
+						"type": "string"
+
+					},
+					"type": {
+						"type": "string"
+
+					},
+					"address": {
+						"type": "object",
+						"properties": {
+							"source": {
+								"type": "string"
+
+							},
+							"addressId": {
+								"type": "string"
+
+							},
+							"recordStatus": {
+								"type": "string"
+
+							},
+							"naxId": {
+								"type": "string"
+							},
+							"elocId": {
+								"type": "string"
+
+							},
+							"cuid": {
+								"type": "string"
+
+							},
+							"referenceId": {
+								"type": "string"
+
+							},
+							"type": {
+								"type": "string"
+
+							},
+							"addressType": {
+								"type": "string"
+
+							},
+							"unitType": {
+								"type": "string"
+
+							},
+							"unitNumber": {
+								"type": "string"
+
+							},
+							"addressLine1": {
+								"type": "string"
+
+							},
+							"addressLine2": {
+								"type": "string"
+
+							},
+							"addressLine3": {
+								"type": "string"
+
+							},
+							"addressLine4": {
+								"type": "string"
+
+							},
+							"city": {
+								"type": "string"
+
+							},
+							"state": {
+								"type": "string"
+
+							},
+							"county": {
+								"type": "string"
+
+							},
+							"country": {
+								"type": "string"
+
+							},
+							"stateCode": {
+								"type": "string"
+
+							},
+							"countryCode": {
+								"type": "string"
+
+							},
+							"zipCode": {
+								"type": "string"
+
+							},
+							"zipExtension": {
+								"type": "string"
+
+							},
+							"addressValidationInd": {
+								"type": "string"
+
+							},
+							"latitude": {
+								"type": "string"
+
+							},
+							"longitude": {
+								"type": "string"
+
+							},
+							"timeZone": {
+								"type": "string"
+
+							},
+							"daylightSavingTimeInd": {
+								"type": "string"
+
+							},
+							"censusBlock": {
+								"type": "string"
+
+							},
+							"greenFieldInd": {
+								"type": "string"
+
+							},
+							"vertex": {
+								"type": "string"
+
+							},
+							"cran": {
+								"type": "string"
+
+							},
+							"headend": {
+								"type": "string"
+
+							},
+							"headendCLLI": {
+								"type": "string"
+
+							},
+							"fiberNodeName": {
+								"type": "string"
+
+							},
+							"division": {
+								"type": "string"
+
+							},
+							"region": {
+								"type": "string"
+
+							},
+							"market": {
+								"type": "string"
+
+							},
+							"subMarket": {
+								"type": "string"
+
+							},
+							"busiUnit": {
+								"type": "string"
+
+							},
+							"franchiseInd": {
+								"type": "string"
+
+							},
+							"rateCenterCertification": {
+								"type": "string"
+
+							},
+							"rateCenterName": {
+								"type": "string"
+
+							},
+							"ilecName": {
+								"type": "string"
+
+							},
+							"psapAgency": {
+								"type": "string"
+
+							},
+							"psapId": {
+								"type": "string"
+
+							},
+							"lata": {
+								"type": "string"
+
+							},
+							"lataName": {
+								"type": "string"
+
+							}
+						}
+
+					}
+				}
+			}
+		},
+		"addressServiceError": {
+			"type": "object",
+			"properties": {
+				"errors": {
+					"type": "array",
+					"uniqueItems": true,
+					"minItems": 1,
+					"items": {
+						"properties": {
+							"code": {
+								"type": "string"
+
+							},
+							"message": {
+								"type": "string"
+
+							}
+						}
+					}
+				}
+			}
+		},
+		"contacts": {
+			"type": "array",
+			"minItems": 1,
+			"items": {
+				"properties": {
+					"source": {
+						"type": "string"
+
+					},
+					"referenceId": {
+						"type": "string"
+
+					},
+					"contactId": {
+						"type": "string"
+
+					},
+					"type": {
+						"type": "string"
+
+					},
+					"role": {
+						"type": "string"
+
+					},
+					"contact": {
+						"type": "object",
+						"properties": {
+							"source": {
+								"type": "string"
+
+							},
+							"recordStatus": {
+								"type": "string"
+
+							},
+							"contactId": {
+								"type": "string"
+
+							},
+							"athenaId": {
+								"type": "string"
+
+							},
+							"odsLanguageId": {
+								"type": "string"
+
+							},
+							"salutation": {
+								"type": "string"
+
+							},
+							"firstName": {
+								"type": "string"
+
+							},
+							"middleName": {
+								"type": "string"
+
+							},
+							"lastName": {
+								"type": "string"
+
+							},
+							"legalName": {
+								"type": "string"
+
+							},
+							"professionalTitle": {
+								"type": "string"
+
+							},
+							"birthDate": {
+								"type": "string"
+
+							},
+							"gender": {
+								"type": "string"
+
+							},
+							"maritalStatus": {
+								"type": "string"
+
+							},
+							"preferredName": {
+								"type": "string"
+
+							},
+							"preferredContactTime": {
+								"type": "string"
+
+							},
+							"preferredContactMethod": {
+								"type": "string"
+
+							},
+							"primaryContactInd": {
+								"type": "string"
+
+							},
+							"comcastContactId": {
+								"type": "string"
+
+							},
+							"contactMethod": {
+								"type": "array",
+								"minItems": 1,
+								"items": {
+									"properties": {
+										"contactMethodId": {
+											"type": "string"
+
+										},
+										"source": {
+											"type": "string"
+
+										},
+										"recordStatus": {
+											"type": "string"
+
+										},
+										"odsContactId": {
+											"type": "string"
+
+										},
+										"contactType": {
+											"type": "string"
+
+										},
+										"contactSubType": {
+											"type": "string"
+
+										},
+										"primaryContactMethod": {
+											"type": "string"
+
+										},
+										"contactValue": {
+											"type": "string"
+
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"contactServiceError": {
+			"type": "object",
+			"properties": {
+				"errors": {
+					"type": "array",
+					"uniqueItems": true,
+					"minItems": 1,
+					"items": {
+						"properties": {
+							"code": {
+								"type": "string"
+
+							},
+							"message": {
+								"type": "string"
+
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

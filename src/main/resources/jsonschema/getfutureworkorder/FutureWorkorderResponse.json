@@ -1,0 +1,137 @@
+{
+  "type": "object",
+  "properties": {
+    "workOrderDetails": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "workOrderId": {
+           "type": "string"
+          },
+          "agreementId": {
+           "type": "string"
+          },
+          "customerId": {
+           "type": "string"
+          },
+          "siteId": {
+           "type": "string"
+          },
+          "techId": {
+           "type": "string"
+          },
+          "jobNum": {
+           "type": "string"
+          },
+          "jobUnits": {
+           "type": "string"
+          },
+          "orderComments": {
+           "type": "string"
+          },
+          "jobComments": {
+           "type": "string"
+          },
+          "scheduleDate": {
+           "type": "string"
+          },
+          "equipment": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "action": {
+                 "type": "string"
+                },
+                "serviceId": {
+                 "type": "string"
+                },
+                "armObjectName": {
+                 "type": "string"
+                },
+                "equipmentType": {
+                 "type": "string"
+                },
+                "services": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "action": {
+                       "type": "string"
+                      },
+                      "serviceId": {
+                       "type": "string"
+                      },
+                      "armObjectName": {
+                       "type": "string"
+                      },
+                      "serviceType": {
+                       "type": "string"
+                      },
+                      "name": {
+                       "type": "string"
+                      },
+                      "characteristics": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "characteristicName": {
+                             "type": "string"
+                            },
+                            "characteristicValue": {
+                             "type": "string"
+                            }
+                          }
+                        }
+                      },
+					  "dependentServices": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "action": {
+                            "type": "string"
+                          },
+                          "serviceId": {
+                            "type": "string"
+                          },
+                          "armObjectName": {
+                            "type": "string"
+                          },
+                          "serviceType": {
+                            "type": "string"
+                          },
+                          "name": {
+                            "type": "string"
+                          },
+                          "characteristics": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "characteristicName": {
+                                  "type": "string"
+                                },
+                                "characteristicValue": {
+                                  "type": "string"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

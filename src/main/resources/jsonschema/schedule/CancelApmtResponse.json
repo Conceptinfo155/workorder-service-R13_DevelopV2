@@ -1,0 +1,41 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "definitions": {},
+    "id": "http://example.com/example.json",
+    "properties": {
+     "CancelAppointmentResponseDetails": {
+       "id": "/properties/CancelAppointmentResponseDetails", 
+    "properties": {
+        "CancelAppointmentResponse": {
+            "id": "/properties/CancelAppointmentResponse",
+            "properties": {
+                "code": {
+                	"required":true,
+                    "id": "/properties/CancelAppointmentResponse/properties/code",
+                    "maxLength": 15,
+                    "minLength": 1,
+                    "type": "string"
+                },
+                "message": {
+                	"required":true,
+                    "id": "/properties/CancelAppointmentResponse/properties/message",
+                    "maxLength": 100,
+                    "minLength": 1,
+                    "type": "string"
+                }
+            },
+            "required": [
+                "message",
+                "code"
+            ],
+            "type": "object"
+        }
+    },
+    "type": "object"
+    }
+   }, 
+   "required": [
+    "CancelAppointmentResponseDetails"
+   ], 
+   "type": "object"
+}

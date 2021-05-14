@@ -1,0 +1,47 @@
+{
+	"services": [
+
+		{
+            "type": "Business Voice",
+			"designID": "designID",
+			"serviceID":"serviceID",
+			"service": [{
+				"type": "TN",
+				"action": "Add",
+				"tnNo": "222-222-0001",
+				"tnType": "Native",
+                "isPrimary" : "true",
+				"features": [{
+						"name": "voicemail",
+						"value": "true",
+						"action": "Add"
+					},
+					{
+						"name": "featurepack",
+						"value": "BASIC",
+						"action": "Add"
+					}
+				]
+			},
+			{
+				"type": "TN",
+				"action": "Add",
+				"tnNo": "222-222-0001",
+                "tnType": "Native",
+                "isPrimary" : "true",
+				"features": [
+					{
+						"name": "featurepack",
+						"value": "MOBILITY",
+						"action": "Add"
+					},{
+						"name": "voicemail",
+						"value": "false",
+						"action": "Add"
+					}
+				]
+			}
+			]
+		}
+	]
+}

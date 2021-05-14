@@ -1,0 +1,187 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"type": "object",
+	"properties": {
+		"solutionDetails": {
+			"type": "array",
+			"required": false,
+			"items": {
+				"type": "object",
+				"properties": {
+					"solutionType": {
+						"type": "string",
+						"required": false,
+						"example": "BVE-COAX/BVE-OTT"
+					},
+					"orderType": {
+						"type": "string",
+						"required": false,
+						"enum": [
+							"TC",
+							"SRO",
+							"Change",
+							"Disconnect",
+							"New"
+						],
+						"example": "TC"
+					},
+					"transportType":{
+					    "type": "string",
+						"required": false,
+						"example": "OTT"
+		}
+				}
+			}
+		},
+		"appointment": {
+			"required": true,
+			"type": "object",
+			"properties": {
+				"optionId": {
+					"type": "string",
+					"required": false,
+					"maxLength": 20,
+					"example": "09876"
+				},
+				"forceBookInd": {
+					"type": "boolean",
+					"example": true
+				},
+				"reservationId": {
+					"type": "string",
+					"required": false,
+					"maxLength": 19,
+					"example": "09876"
+				},
+				"noScheduleIndicator": {
+					"type": "boolean",
+					"example": false
+				},
+				"scheduleANoScheduleIndicator": {
+					"type": "boolean",
+					"example": false
+				}
+			}
+		},
+		"workOrder": {
+			"required": true,
+			"type": "object",
+			"properties": {
+				"job": {
+					"required": true,
+					"type": "object",
+					"properties": {
+						"scheduleDate": {
+							"type": "string",
+							"required": false,
+							"maxLength": 10,
+							"example": "2015-10-23"
+						},
+						"timeSlotCd": {
+							"type": "string",
+							"required": false,
+							"maxLength": 3,
+							"example": "2"
+						},
+						"callFirstPhoneNum": {
+							"type": "string",
+							"minLength": 1,
+							"maxLength": 20,
+							"example": "4136500222"
+						},
+						"troubleCallIndicator": {
+							"type": "string",
+							"enum": [
+								"R",
+								"Q",
+								"B"
+							],
+							"example": "R"
+						},
+						"jobComment": {
+							"type": "string",
+							"minLength": 1,
+							"maxLength": 240,
+							"example": "Job Comments"
+						},
+						"orderComment": {
+							"type": "string",
+							"minLength": 1,
+							"maxLength": 500,
+							"example": "Order Comments"
+						},
+						"reasonCodes": {
+							"type": "array",
+							"required": false,
+							"items": {
+								"type": "string",
+								"examples": [
+									"CA",
+									"CB",
+									"CD"
+								]
+							}
+						},
+						"technicianNum": {
+							"type": "string",
+							"minLength": 1,
+							"maxLength": 20,
+							"example": "0101"
+						}
+					}
+				},
+				"jobCustomer": {
+					"required": true,
+					"type": "object",
+					"properties": {
+						"customerId": {
+							"type": "string",
+							"minLength": 1,
+							"required": true,
+							"maxLength": 10,
+							"example": "4136500222"
+						},
+						"siteId": {
+							"type": "string",
+							"minLength": 1,
+							"required": true,
+							"maxLength": 20,
+							"example": "Site_0981098"
+						},
+						"lastName": {
+							"type": "string",
+							"minLength": 1,
+							"required": true,
+							"maxLength": 50,
+							"example": "Venkata"
+						},
+						"firstName": {
+							"type": "string",
+							"minLength": 1,
+							"maxLength": 50,
+							"example": "Harish"
+						},
+						"homePhoneNum": {
+							"type": "string",
+							"minLength": 1,
+							"maxLength": 20,
+							"example": "4136500222"
+						},
+						"workPhoneNum": {
+							"type": "string",
+							"minLength": 1,
+							"maxLength": 20,
+							"example": "4136500222"
+						},
+						"emailAddr": {
+							"type": "string",
+							"minLength": 1,
+							"maxLength": 320,
+							"example": "admin@abc.com"
+						}
+					}
+				}
+			}
+		}
+	}
+}

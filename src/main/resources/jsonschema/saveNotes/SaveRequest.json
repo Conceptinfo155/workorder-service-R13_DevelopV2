@@ -1,0 +1,26 @@
+{
+	"type": "object",
+	"properties": {
+		"SaveNoteRequest": {
+			"type": "object",
+			"properties": {
+				"createdBy": {
+					"type": "string",
+					"required": true,
+					"minLength": 1,
+					"maxLength": 100,
+					"example": "Sudeep Subhedar"
+				},
+				"noteType": {
+					"type": "string",
+					"required": true,
+					"example": "Technician Note"
+				},
+				"fieldsList": {
+					"type": "object",
+					"additionalProperties": true
+				}
+			}
+		}
+	}
+}

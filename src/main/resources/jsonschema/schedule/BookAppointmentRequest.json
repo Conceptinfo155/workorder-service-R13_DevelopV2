@@ -1,0 +1,9 @@
+{
+  "appointmentId": "string",
+  "appointmentOption": {
+    "OptionId": "string"
+  },
+  "forceBookInd": "string",
+  "requesterId": "string",
+  "reservationId": "string"
+}

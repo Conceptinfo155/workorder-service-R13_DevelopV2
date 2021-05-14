@@ -1,0 +1,13 @@
+{
+    "type": "object",
+  "properties": {
+    "workOrderDetailsRequest": {
+      "type": "object",
+      "properties": {
+        "workOrderId": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

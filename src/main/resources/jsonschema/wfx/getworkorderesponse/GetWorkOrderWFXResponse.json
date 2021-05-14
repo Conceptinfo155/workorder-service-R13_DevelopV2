@@ -1,0 +1,1350 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "JobEquipmentList",
+    "JobCustomer",
+    "Job",
+    "JobLocation",
+    "JobProductList"
+  ],
+  "properties": {
+    "JobEquipmentList": {
+      "$id": "#/properties/JobEquipmentList",
+      "type": "array",
+      "title": "The Jobequipmentlist Schema"
+    },
+    "JobCustomer": {
+      "$id": "#/properties/JobCustomer",
+      "type": "object",
+      "title": "The Jobcustomer Schema",
+      "required": [
+        "HomePhoneNum",
+        "CustomerId",
+        "WorkPhoneNum",
+        "AccountNum",
+        "FirstName",
+        "NumDayDelinquent",
+        "CustomerCustomFields",
+        "LastName",
+        "CurrentBalance",
+        "EmailAddr",
+        "DelinquencyStatusCd",
+        "DelinquentAmount",
+        "VipCd",
+        "CustMisc",
+        "RegistrationCd",
+        "LanguageCd"
+      ],
+      "properties": {
+        "HomePhoneNum": {
+          "$id": "#/properties/JobCustomer/properties/HomePhoneNum",
+          "type": "string",
+          "title": "The Homephonenum Schema",
+          "default": "",
+          "examples": [
+            "8562631979"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "CustomerId": {
+          "$id": "#/properties/JobCustomer/properties/CustomerId",
+          "type": "string",
+          "title": "The Customerid Schema",
+          "default": "",
+          "examples": [
+            "30370000001"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "WorkPhoneNum": {
+          "$id": "#/properties/JobCustomer/properties/WorkPhoneNum",
+          "type": "string",
+          "title": "The Workphonenum Schema",
+          "default": "",
+          "examples": [
+            "8562631979"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "AccountNum": {
+          "$id": "#/properties/JobCustomer/properties/AccountNum",
+          "type": "string",
+          "title": "The Accountnum Schema",
+          "default": "",
+          "examples": [
+            "1111111111111111"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "FirstName": {
+          "$id": "#/properties/JobCustomer/properties/FirstName",
+          "type": "string",
+          "title": "The Firstname Schema",
+          "default": "",
+          "examples": [
+            "Karthik"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "NumDayDelinquent": {
+          "$id": "#/properties/JobCustomer/properties/NumDayDelinquent",
+          "type": "null",
+          "title": "The Numdaydelinquent Schema",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "CustomerCustomFields": {
+          "$id": "#/properties/JobCustomer/properties/CustomerCustomFields",
+          "type": "object",
+          "title": "The Customercustomfields Schema",
+          "required": [
+            "CustomerCustom4",
+            "CustomerCustom9",
+            "CustomerCustom1",
+            "CustomerCustom10",
+            "CustomerCustom8",
+            "CustomerCustom5",
+            "CustomerCustom12",
+            "CustomerCustom3",
+            "CustomerCustom11",
+            "CustomerCustom6",
+            "CustomerCustom7",
+            "CustomerCustom2"
+          ],
+          "properties": {
+            "CustomerCustom4": {
+              "$id": "#/properties/JobCustomer/properties/CustomerCustomFields/properties/CustomerCustom4",
+              "type": "null",
+              "title": "The Customercustom4 Schema",
+              "default": null,
+              "examples": [
+                null
+              ]
+            },
+            "CustomerCustom9": {
+              "$id": "#/properties/JobCustomer/properties/CustomerCustomFields/properties/CustomerCustom9",
+              "type": "null",
+              "title": "The Customercustom9 Schema",
+              "default": null,
+              "examples": [
+                null
+              ]
+            },
+            "CustomerCustom1": {
+              "$id": "#/properties/JobCustomer/properties/CustomerCustomFields/properties/CustomerCustom1",
+              "type": "null",
+              "title": "The Customercustom1 Schema",
+              "default": null,
+              "examples": [
+                null
+              ]
+            },
+            "CustomerCustom10": {
+              "$id": "#/properties/JobCustomer/properties/CustomerCustomFields/properties/CustomerCustom10",
+              "type": "null",
+              "title": "The Customercustom10 Schema",
+              "default": null,
+              "examples": [
+                null
+              ]
+            },
+            "CustomerCustom8": {
+              "$id": "#/properties/JobCustomer/properties/CustomerCustomFields/properties/CustomerCustom8",
+              "type": "null",
+              "title": "The Customercustom8 Schema",
+              "default": null,
+              "examples": [
+                null
+              ]
+            },
+            "CustomerCustom5": {
+              "$id": "#/properties/JobCustomer/properties/CustomerCustomFields/properties/CustomerCustom5",
+              "type": "null",
+              "title": "The Customercustom5 Schema",
+              "default": null,
+              "examples": [
+                null
+              ]
+            },
+            "CustomerCustom12": {
+              "$id": "#/properties/JobCustomer/properties/CustomerCustomFields/properties/CustomerCustom12",
+              "type": "null",
+              "title": "The Customercustom12 Schema",
+              "default": null,
+              "examples": [
+                null
+              ]
+            },
+            "CustomerCustom3": {
+              "$id": "#/properties/JobCustomer/properties/CustomerCustomFields/properties/CustomerCustom3",
+              "type": "null",
+              "title": "The Customercustom3 Schema",
+              "default": null,
+              "examples": [
+                null
+              ]
+            },
+            "CustomerCustom11": {
+              "$id": "#/properties/JobCustomer/properties/CustomerCustomFields/properties/CustomerCustom11",
+              "type": "null",
+              "title": "The Customercustom11 Schema",
+              "default": null,
+              "examples": [
+                null
+              ]
+            },
+            "CustomerCustom6": {
+              "$id": "#/properties/JobCustomer/properties/CustomerCustomFields/properties/CustomerCustom6",
+              "type": "null",
+              "title": "The Customercustom6 Schema",
+              "default": null,
+              "examples": [
+                null
+              ]
+            },
+            "CustomerCustom7": {
+              "$id": "#/properties/JobCustomer/properties/CustomerCustomFields/properties/CustomerCustom7",
+              "type": "null",
+              "title": "The Customercustom7 Schema",
+              "default": null,
+              "examples": [
+                null
+              ]
+            },
+            "CustomerCustom2": {
+              "$id": "#/properties/JobCustomer/properties/CustomerCustomFields/properties/CustomerCustom2",
+              "type": "null",
+              "title": "The Customercustom2 Schema",
+              "default": null,
+              "examples": [
+                null
+              ]
+            }
+          }
+        },
+        "LastName": {
+          "$id": "#/properties/JobCustomer/properties/LastName",
+          "type": "string",
+          "title": "The Lastname Schema",
+          "default": "",
+          "examples": [
+            "TR"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "CurrentBalance": {
+          "$id": "#/properties/JobCustomer/properties/CurrentBalance",
+          "type": "null",
+          "title": "The Currentbalance Schema",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "EmailAddr": {
+          "$id": "#/properties/JobCustomer/properties/EmailAddr",
+          "type": "string",
+          "title": "The Emailaddr Schema",
+          "default": "",
+          "examples": [
+            "abc777@abc.com"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "DelinquencyStatusCd": {
+          "$id": "#/properties/JobCustomer/properties/DelinquencyStatusCd",
+          "type": "null",
+          "title": "The Delinquencystatuscd Schema",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "DelinquentAmount": {
+          "$id": "#/properties/JobCustomer/properties/DelinquentAmount",
+          "type": "null",
+          "title": "The Delinquentamount Schema",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "VipCd": {
+          "$id": "#/properties/JobCustomer/properties/VipCd",
+          "type": "null",
+          "title": "The Vipcd Schema",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "CustMisc": {
+          "$id": "#/properties/JobCustomer/properties/CustMisc",
+          "type": "null",
+          "title": "The Custmisc Schema",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "RegistrationCd": {
+          "$id": "#/properties/JobCustomer/properties/RegistrationCd",
+          "type": "null",
+          "title": "The Registrationcd Schema",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "LanguageCd": {
+          "$id": "#/properties/JobCustomer/properties/LanguageCd",
+          "type": "null",
+          "title": "The Languagecd Schema",
+          "default": null,
+          "examples": [
+            null
+          ]
+        }
+      }
+    },
+    "Job": {
+      "$id": "#/properties/Job",
+      "type": "object",
+      "title": "The Job Schema",
+      "required": [
+        "CallFirstPhoneNum",
+        "CreateDateTime",
+        "TimeSlotDesc",
+        "StartDateTime",
+        "WorkOrderNum",
+        "LastChangeOper",
+        "EndDateTime",
+        "TroubleCallIndicator",
+        "DaylightSavingsObserved",
+        "EnRouteRequestInd",
+        "InitialStartDateTime",
+        "OnTimeGuaranteeInd",
+        "TimeSlotEndDateTime",
+        "AdjDurationMins",
+        "ETADateTime",
+        "JobReasonCdList",
+        "JobClassCd",
+        "JobCustomFields",
+        "TimeSlotStartDateTime",
+        "JobTypeDesc",
+        "JobResolutionCdList",
+        "TimeZoneOffset",
+        "SkillPriorityOverride",
+        "ESTTime",
+        "OrderNum",
+        "BusinessUnit",
+        "CodAmount",
+        "ScheduleDate",
+        "SalesmanNum",
+        "TechnicianNum",
+        "OrderMgmtSystem",
+        "InstallerType",
+        "SourceId",
+        "TimeSlotCd",
+        "DispatcherStatusCd",
+        "JobUnits",
+        "TechId",
+        "JobTypeCd",
+        "JobCommentTypeCdList",
+        "JobNum",
+        "FulfillmentCenter"
+      ],
+      "properties": {
+        "CallFirstPhoneNum": {
+          "$id": "#/properties/Job/properties/CallFirstPhoneNum",
+          "type": "string",
+          "title": "The Callfirstphonenum Schema",
+          "default": "",
+          "examples": [
+            "55674567"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "CreateDateTime": {
+          "$id": "#/properties/Job/properties/CreateDateTime",
+          "type": "string",
+          "title": "The Createdatetime Schema",
+          "default": "",
+          "examples": [
+            "2018-12-11T11:08:04-08:00"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "TimeSlotDesc": {
+          "$id": "#/properties/Job/properties/TimeSlotDesc",
+          "type": "string",
+          "title": "The Timeslotdesc Schema",
+          "default": "",
+          "examples": [
+            "1200-1400"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "StartDateTime": {
+          "$id": "#/properties/Job/properties/StartDateTime",
+          "type": "null",
+          "title": "The Startdatetime Schema",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "WorkOrderNum": {
+          "$id": "#/properties/Job/properties/WorkOrderNum",
+          "type": "string",
+          "title": "The Workordernum Schema",
+          "default": "",
+          "examples": [
+            "ORION-73435"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "LastChangeOper": {
+          "$id": "#/properties/Job/properties/LastChangeOper",
+          "type": "string",
+          "title": "The Lastchangeoper Schema",
+          "default": "",
+          "examples": [
+            "CSGWFX01:Workforce Management"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "EndDateTime": {
+          "$id": "#/properties/Job/properties/EndDateTime",
+          "type": "null",
+          "title": "The Enddatetime Schema",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "TroubleCallIndicator": {
+          "$id": "#/properties/Job/properties/TroubleCallIndicator",
+          "type": "string",
+          "title": "The Troublecallindicator Schema",
+          "default": "",
+          "examples": [
+            "Y"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "DaylightSavingsObserved": {
+          "$id": "#/properties/Job/properties/DaylightSavingsObserved",
+          "type": "string",
+          "title": "The Daylightsavingsobserved Schema",
+          "default": "",
+          "examples": [
+            "Y"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "EnRouteRequestInd": {
+          "$id": "#/properties/Job/properties/EnRouteRequestInd",
+          "type": "null",
+          "title": "The Enrouterequestind Schema",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "InitialStartDateTime": {
+          "$id": "#/properties/Job/properties/InitialStartDateTime",
+          "type": "null",
+          "title": "The Initialstartdatetime Schema",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "OnTimeGuaranteeInd": {
+          "$id": "#/properties/Job/properties/OnTimeGuaranteeInd",
+          "type": "null",
+          "title": "The Ontimeguaranteeind Schema",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "TimeSlotEndDateTime": {
+          "$id": "#/properties/Job/properties/TimeSlotEndDateTime",
+          "type": "string",
+          "title": "The Timeslotenddatetime Schema",
+          "default": "",
+          "examples": [
+            "2018-12-11T14:00:00-08:00"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "AdjDurationMins": {
+          "$id": "#/properties/Job/properties/AdjDurationMins",
+          "type": "null",
+          "title": "The Adjdurationmins Schema",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "ETADateTime": {
+          "$id": "#/properties/Job/properties/ETADateTime",
+          "type": "null",
+          "title": "The Etadatetime Schema",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "JobReasonCdList": {
+          "$id": "#/properties/Job/properties/JobReasonCdList",
+          "type": "array",
+          "title": "The Jobreasoncdlist Schema"
+        },
+        "JobClassCd": {
+          "$id": "#/properties/Job/properties/JobClassCd",
+          "type": "string",
+          "title": "The Jobclasscd Schema",
+          "default": "",
+          "examples": [
+            "S"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "JobCustomFields": {
+          "$id": "#/properties/Job/properties/JobCustomFields",
+          "type": "object",
+          "title": "The Jobcustomfields Schema",
+          "required": [
+            "JobCustom5",
+            "JobCustom10",
+            "JobCustom9",
+            "JobCustom8",
+            "JobCustom6",
+            "JobCustom4",
+            "JobCustom1",
+            "JobCustom3",
+            "JobCustom2",
+            "JobCustom11",
+            "JobCustom7",
+            "JobCustom12"
+          ],
+          "properties": {
+            "JobCustom5": {
+              "$id": "#/properties/Job/properties/JobCustomFields/properties/JobCustom5",
+              "type": "null",
+              "title": "The Jobcustom5 Schema",
+              "default": null,
+              "examples": [
+                null
+              ]
+            },
+            "JobCustom10": {
+              "$id": "#/properties/Job/properties/JobCustomFields/properties/JobCustom10",
+              "type": "null",
+              "title": "The Jobcustom10 Schema",
+              "default": null,
+              "examples": [
+                null
+              ]
+            },
+            "JobCustom9": {
+              "$id": "#/properties/Job/properties/JobCustomFields/properties/JobCustom9",
+              "type": "null",
+              "title": "The Jobcustom9 Schema",
+              "default": null,
+              "examples": [
+                null
+              ]
+            },
+            "JobCustom8": {
+              "$id": "#/properties/Job/properties/JobCustomFields/properties/JobCustom8",
+              "type": "null",
+              "title": "The Jobcustom8 Schema",
+              "default": null,
+              "examples": [
+                null
+              ]
+            },
+            "JobCustom6": {
+              "$id": "#/properties/Job/properties/JobCustomFields/properties/JobCustom6",
+              "type": "null",
+              "title": "The Jobcustom6 Schema",
+              "default": null,
+              "examples": [
+                null
+              ]
+            },
+            "JobCustom4": {
+              "$id": "#/properties/Job/properties/JobCustomFields/properties/JobCustom4",
+              "type": "null",
+              "title": "The Jobcustom4 Schema",
+              "default": null,
+              "examples": [
+                null
+              ]
+            },
+            "JobCustom1": {
+              "$id": "#/properties/Job/properties/JobCustomFields/properties/JobCustom1",
+              "type": "null",
+              "title": "The Jobcustom1 Schema",
+              "default": null,
+              "examples": [
+                null
+              ]
+            },
+            "JobCustom3": {
+              "$id": "#/properties/Job/properties/JobCustomFields/properties/JobCustom3",
+              "type": "null",
+              "title": "The Jobcustom3 Schema",
+              "default": null,
+              "examples": [
+                null
+              ]
+            },
+            "JobCustom2": {
+              "$id": "#/properties/Job/properties/JobCustomFields/properties/JobCustom2",
+              "type": "null",
+              "title": "The Jobcustom2 Schema",
+              "default": null,
+              "examples": [
+                null
+              ]
+            },
+            "JobCustom11": {
+              "$id": "#/properties/Job/properties/JobCustomFields/properties/JobCustom11",
+              "type": "null",
+              "title": "The Jobcustom11 Schema",
+              "default": null,
+              "examples": [
+                null
+              ]
+            },
+            "JobCustom7": {
+              "$id": "#/properties/Job/properties/JobCustomFields/properties/JobCustom7",
+              "type": "null",
+              "title": "The Jobcustom7 Schema",
+              "default": null,
+              "examples": [
+                null
+              ]
+            },
+            "JobCustom12": {
+              "$id": "#/properties/Job/properties/JobCustomFields/properties/JobCustom12",
+              "type": "null",
+              "title": "The Jobcustom12 Schema",
+              "default": null,
+              "examples": [
+                null
+              ]
+            }
+          }
+        },
+        "TimeSlotStartDateTime": {
+          "$id": "#/properties/Job/properties/TimeSlotStartDateTime",
+          "type": "string",
+          "title": "The Timeslotstartdatetime Schema",
+          "default": "",
+          "examples": [
+            "2018-12-11T12:00:00-08:00"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "JobTypeDesc": {
+          "$id": "#/properties/Job/properties/JobTypeDesc",
+          "type": "string",
+          "title": "The Jobtypedesc Schema",
+          "default": "",
+          "examples": [
+            "UP BC SIP FIBER"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "JobResolutionCdList": {
+          "$id": "#/properties/Job/properties/JobResolutionCdList",
+          "type": "array",
+          "title": "The Jobresolutioncdlist Schema"
+        },
+        "TimeZoneOffset": {
+          "$id": "#/properties/Job/properties/TimeZoneOffset",
+          "type": "string",
+          "title": "The Timezoneoffset Schema",
+          "default": "",
+          "examples": [
+            "480"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "SkillPriorityOverride": {
+          "$id": "#/properties/Job/properties/SkillPriorityOverride",
+          "type": "null",
+          "title": "The Skillpriorityoverride Schema",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "ESTTime": {
+          "$id": "#/properties/Job/properties/ESTTime",
+          "type": "string",
+          "title": "The Esttime Schema",
+          "default": "",
+          "examples": [
+            "0"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "OrderNum": {
+          "$id": "#/properties/Job/properties/OrderNum",
+          "type": "null",
+          "title": "The Ordernum Schema",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "BusinessUnit": {
+          "$id": "#/properties/Job/properties/BusinessUnit",
+          "type": "string",
+          "title": "The Businessunit Schema",
+          "default": "",
+          "examples": [
+            "821010000200"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "CodAmount": {
+          "$id": "#/properties/Job/properties/CodAmount",
+          "type": "null",
+          "title": "The Codamount Schema",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "ScheduleDate": {
+          "$id": "#/properties/Job/properties/ScheduleDate",
+          "type": "string",
+          "title": "The Scheduledate Schema",
+          "default": "",
+          "examples": [
+            "2018-12-11"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "SalesmanNum": {
+          "$id": "#/properties/Job/properties/SalesmanNum",
+          "type": "null",
+          "title": "The Salesmannum Schema",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "TechnicianNum": {
+          "$id": "#/properties/Job/properties/TechnicianNum",
+          "type": "string",
+          "title": "The Techniciannum Schema",
+          "default": "",
+          "examples": [
+            "0101"
+          ]
+        },
+        "OrderMgmtSystem": {
+          "$id": "#/properties/Job/properties/OrderMgmtSystem",
+          "type": "string",
+          "title": "The Ordermgmtsystem Schema",
+          "default": "",
+          "examples": [
+            "ORION"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "InstallerType": {
+          "$id": "#/properties/Job/properties/InstallerType",
+          "type": "string",
+          "title": "The Installertype Schema",
+          "default": "",
+          "examples": [
+            "I"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "SourceId": {
+          "$id": "#/properties/Job/properties/SourceId",
+          "type": "string",
+          "title": "The Sourceid Schema",
+          "default": "",
+          "examples": [
+            "WFX"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "TimeSlotCd": {
+          "$id": "#/properties/Job/properties/TimeSlotCd",
+          "type": "string",
+          "title": "The Timeslotcd Schema",
+          "default": "",
+          "examples": [
+            "6"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "DispatcherStatusCd": {
+          "$id": "#/properties/Job/properties/DispatcherStatusCd",
+          "type": "string",
+          "title": "The Dispatcherstatuscd Schema",
+          "default": "",
+          "examples": [
+            "R"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "JobUnits": {
+          "$id": "#/properties/Job/properties/JobUnits",
+          "type": "string",
+          "title": "The Jobunits Schema",
+          "default": "",
+          "examples": [
+            "5"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "TechId": {
+          "$id": "#/properties/Job/properties/TechId",
+          "type": "null",
+          "title": "The Techid Schema",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "JobTypeCd": {
+          "$id": "#/properties/Job/properties/JobTypeCd",
+          "type": "string",
+          "title": "The Jobtypecd Schema",
+          "default": "",
+          "examples": [
+            "6E"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "JobCommentTypeCdList": {
+          "$id": "#/properties/Job/properties/JobCommentTypeCdList",
+          "type": "array",
+          "title": "The Jobcommenttypecdlist Schema",
+          "items": {
+            "$id": "#/properties/Job/properties/JobCommentTypeCdList/items",
+            "type": "object",
+            "title": "The Items Schema",
+            "required": [
+              "JobComment",
+              "JobCommentTypeCd"
+            ],
+            "properties": {
+              "JobComment": {
+                "$id": "#/properties/Job/properties/JobCommentTypeCdList/items/properties/JobComment",
+                "type": "string",
+                "title": "The Jobcomment Schema",
+                "default": "",
+                "examples": [
+                  "TEST"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "JobCommentTypeCd": {
+                "$id": "#/properties/Job/properties/JobCommentTypeCdList/items/properties/JobCommentTypeCd",
+                "type": "string",
+                "title": "The Jobcommenttypecd Schema",
+                "default": "",
+                "examples": [
+                  "JOB"
+                ],
+                "pattern": "^(.*)$"
+              }
+            }
+          }
+        },
+        "JobNum": {
+          "$id": "#/properties/Job/properties/JobNum",
+          "type": "string",
+          "title": "The Jobnum Schema",
+          "default": "",
+          "examples": [
+            "000068"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "FulfillmentCenter": {
+          "$id": "#/properties/Job/properties/FulfillmentCenter",
+          "type": "string",
+          "title": "The Fulfillmentcenter Schema",
+          "default": "",
+          "examples": [
+            "182101001"
+          ],
+          "pattern": "^(.*)$"
+        }
+      }
+    },
+    "JobLocation": {
+      "$id": "#/properties/JobLocation",
+      "type": "object",
+      "title": "The Joblocation Schema",
+      "required": [
+        "ServiceArea",
+        "Address",
+        "LocationDropTags",
+        "HouseMisc",
+        "DropLocationCd",
+        "PowerSupply",
+        "BldgTypeCd",
+        "HouseComment",
+        "RouteCriteria",
+        "HookupType",
+        "HeadendCd",
+        "ManagementArea",
+        "Amplifier",
+        "HouseStatus",
+        "MapCd",
+        "DropType",
+        "LocationCustomFields",
+        "CensusCd",
+        "BridgerAddress",
+        "PoleNum",
+        "TapStatusCd",
+        "Node"
+      ],
+      "properties": {
+        "ServiceArea": {
+          "$id": "#/properties/JobLocation/properties/ServiceArea",
+          "type": "null",
+          "title": "The Servicearea Schema",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "Address": {
+          "$id": "#/properties/JobLocation/properties/Address",
+          "type": "object",
+          "title": "The Address Schema",
+          "required": [
+            "AddrLine1",
+            "ZipCode",
+            "AddrId",
+            "State",
+            "City",
+            "AddrLine2"
+          ],
+          "properties": {
+            "AddrLine1": {
+              "$id": "#/properties/JobLocation/properties/Address/properties/AddrLine1",
+              "type": "string",
+              "title": "The Addrline1 Schema",
+              "default": "",
+              "examples": [
+                "1354 E BOOT ROAD"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "ZipCode": {
+              "$id": "#/properties/JobLocation/properties/Address/properties/ZipCode",
+              "type": "string",
+              "title": "The Zipcode Schema",
+              "default": "",
+              "examples": [
+                "19380"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "AddrId": {
+              "$id": "#/properties/JobLocation/properties/Address/properties/AddrId",
+              "type": "string",
+              "title": "The Addrid Schema",
+              "default": "",
+              "examples": [
+                "205469942"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "State": {
+              "$id": "#/properties/JobLocation/properties/Address/properties/State",
+              "type": "string",
+              "title": "The State Schema",
+              "default": "",
+              "examples": [
+                "PA"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "City": {
+              "$id": "#/properties/JobLocation/properties/Address/properties/City",
+              "type": "string",
+              "title": "The City Schema",
+              "default": "",
+              "examples": [
+                "WEST CHESTER"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "AddrLine2": {
+              "$id": "#/properties/JobLocation/properties/Address/properties/AddrLine2",
+              "type": "string",
+              "title": "The Addrline2 Schema",
+              "default": "",
+              "examples": [
+                "WEST"
+              ],
+              "pattern": "^(.*)$"
+            }
+          }
+        },
+        "LocationDropTags": {
+          "$id": "#/properties/JobLocation/properties/LocationDropTags",
+          "type": "object",
+          "title": "The Locationdroptags Schema",
+          "required": [
+            "DropTag2",
+            "DropTag1",
+            "DropTag3"
+          ],
+          "properties": {
+            "DropTag2": {
+              "$id": "#/properties/JobLocation/properties/LocationDropTags/properties/DropTag2",
+              "type": "null",
+              "title": "The Droptag2 Schema",
+              "default": null,
+              "examples": [
+                null
+              ]
+            },
+            "DropTag1": {
+              "$id": "#/properties/JobLocation/properties/LocationDropTags/properties/DropTag1",
+              "type": "null",
+              "title": "The Droptag1 Schema",
+              "default": null,
+              "examples": [
+                null
+              ]
+            },
+            "DropTag3": {
+              "$id": "#/properties/JobLocation/properties/LocationDropTags/properties/DropTag3",
+              "type": "null",
+              "title": "The Droptag3 Schema",
+              "default": null,
+              "examples": [
+                null
+              ]
+            }
+          }
+        },
+        "HouseMisc": {
+          "$id": "#/properties/JobLocation/properties/HouseMisc",
+          "type": "null",
+          "title": "The Housemisc Schema",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "DropLocationCd": {
+          "$id": "#/properties/JobLocation/properties/DropLocationCd",
+          "type": "null",
+          "title": "The Droplocationcd Schema",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "PowerSupply": {
+          "$id": "#/properties/JobLocation/properties/PowerSupply",
+          "type": "null",
+          "title": "The Powersupply Schema",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "BldgTypeCd": {
+          "$id": "#/properties/JobLocation/properties/BldgTypeCd",
+          "type": "null",
+          "title": "The Bldgtypecd Schema",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "HouseComment": {
+          "$id": "#/properties/JobLocation/properties/HouseComment",
+          "type": "null",
+          "title": "The Housecomment Schema",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "RouteCriteria": {
+          "$id": "#/properties/JobLocation/properties/RouteCriteria",
+          "type": "string",
+          "title": "The Routecriteria Schema",
+          "default": "",
+          "examples": [
+            "4C"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "HookupType": {
+          "$id": "#/properties/JobLocation/properties/HookupType",
+          "type": "null",
+          "title": "The Hookuptype Schema",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "HeadendCd": {
+          "$id": "#/properties/JobLocation/properties/HeadendCd",
+          "type": "null",
+          "title": "The Headendcd Schema",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "ManagementArea": {
+          "$id": "#/properties/JobLocation/properties/ManagementArea",
+          "type": "null",
+          "title": "The Managementarea Schema",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "Amplifier": {
+          "$id": "#/properties/JobLocation/properties/Amplifier",
+          "type": "null",
+          "title": "The Amplifier Schema",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "HouseStatus": {
+          "$id": "#/properties/JobLocation/properties/HouseStatus",
+          "type": "null",
+          "title": "The Housestatus Schema",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "MapCd": {
+          "$id": "#/properties/JobLocation/properties/MapCd",
+          "type": "null",
+          "title": "The Mapcd Schema",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "DropType": {
+          "$id": "#/properties/JobLocation/properties/DropType",
+          "type": "null",
+          "title": "The Droptype Schema",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "LocationCustomFields": {
+          "$id": "#/properties/JobLocation/properties/LocationCustomFields",
+          "type": "object",
+          "title": "The Locationcustomfields Schema",
+          "required": [
+            "LocationCustom8",
+            "LocationCustom10",
+            "LocationCustom4",
+            "LocationCustom7",
+            "LocationCustom2",
+            "LocationCustom12",
+            "LocationCustom3",
+            "LocationCustom6",
+            "LocationCustom9",
+            "LocationCustom5",
+            "LocationCustom11",
+            "LocationCustom1"
+          ],
+          "properties": {
+            "LocationCustom8": {
+              "$id": "#/properties/JobLocation/properties/LocationCustomFields/properties/LocationCustom8",
+              "type": "null",
+              "title": "The Locationcustom8 Schema",
+              "default": null,
+              "examples": [
+                null
+              ]
+            },
+            "LocationCustom10": {
+              "$id": "#/properties/JobLocation/properties/LocationCustomFields/properties/LocationCustom10",
+              "type": "null",
+              "title": "The Locationcustom10 Schema",
+              "default": null,
+              "examples": [
+                null
+              ]
+            },
+            "LocationCustom4": {
+              "$id": "#/properties/JobLocation/properties/LocationCustomFields/properties/LocationCustom4",
+              "type": "null",
+              "title": "The Locationcustom4 Schema",
+              "default": null,
+              "examples": [
+                null
+              ]
+            },
+            "LocationCustom7": {
+              "$id": "#/properties/JobLocation/properties/LocationCustomFields/properties/LocationCustom7",
+              "type": "null",
+              "title": "The Locationcustom7 Schema",
+              "default": null,
+              "examples": [
+                null
+              ]
+            },
+            "LocationCustom2": {
+              "$id": "#/properties/JobLocation/properties/LocationCustomFields/properties/LocationCustom2",
+              "type": "null",
+              "title": "The Locationcustom2 Schema",
+              "default": null,
+              "examples": [
+                null
+              ]
+            },
+            "LocationCustom12": {
+              "$id": "#/properties/JobLocation/properties/LocationCustomFields/properties/LocationCustom12",
+              "type": "null",
+              "title": "The Locationcustom12 Schema",
+              "default": null,
+              "examples": [
+                null
+              ]
+            },
+            "LocationCustom3": {
+              "$id": "#/properties/JobLocation/properties/LocationCustomFields/properties/LocationCustom3",
+              "type": "null",
+              "title": "The Locationcustom3 Schema",
+              "default": null,
+              "examples": [
+                null
+              ]
+            },
+            "LocationCustom6": {
+              "$id": "#/properties/JobLocation/properties/LocationCustomFields/properties/LocationCustom6",
+              "type": "null",
+              "title": "The Locationcustom6 Schema",
+              "default": null,
+              "examples": [
+                null
+              ]
+            },
+            "LocationCustom9": {
+              "$id": "#/properties/JobLocation/properties/LocationCustomFields/properties/LocationCustom9",
+              "type": "null",
+              "title": "The Locationcustom9 Schema",
+              "default": null,
+              "examples": [
+                null
+              ]
+            },
+            "LocationCustom5": {
+              "$id": "#/properties/JobLocation/properties/LocationCustomFields/properties/LocationCustom5",
+              "type": "null",
+              "title": "The Locationcustom5 Schema",
+              "default": null,
+              "examples": [
+                null
+              ]
+            },
+            "LocationCustom11": {
+              "$id": "#/properties/JobLocation/properties/LocationCustomFields/properties/LocationCustom11",
+              "type": "null",
+              "title": "The Locationcustom11 Schema",
+              "default": null,
+              "examples": [
+                null
+              ]
+            },
+            "LocationCustom1": {
+              "$id": "#/properties/JobLocation/properties/LocationCustomFields/properties/LocationCustom1",
+              "type": "null",
+              "title": "The Locationcustom1 Schema",
+              "default": null,
+              "examples": [
+                null
+              ]
+            }
+          }
+        },
+        "CensusCd": {
+          "$id": "#/properties/JobLocation/properties/CensusCd",
+          "type": "null",
+          "title": "The Censuscd Schema",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "BridgerAddress": {
+          "$id": "#/properties/JobLocation/properties/BridgerAddress",
+          "type": "null",
+          "title": "The Bridgeraddress Schema",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "PoleNum": {
+          "$id": "#/properties/JobLocation/properties/PoleNum",
+          "type": "null",
+          "title": "The Polenum Schema",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "TapStatusCd": {
+          "$id": "#/properties/JobLocation/properties/TapStatusCd",
+          "type": "null",
+          "title": "The Tapstatuscd Schema",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "Node": {
+          "$id": "#/properties/JobLocation/properties/Node",
+          "type": "null",
+          "title": "The Node Schema",
+          "default": null,
+          "examples": [
+            null
+          ]
+        }
+      }
+    },
+    "JobProductList": {
+      "$id": "#/properties/JobProductList",
+      "type": "array",
+      "title": "The Jobproductlist Schema"
+    }
+  }
+}

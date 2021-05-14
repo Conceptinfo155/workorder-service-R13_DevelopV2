@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="3.2" jmeter="3.3 r1808647">
+  <hashTree>
+    <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="Service Specific User Defined Variables" enabled="true">
+      <collectionProp name="Arguments.arguments">
+        <elementProp name="Token" elementType="Argument">
+          <stringProp name="Argument.name">Token</stringProp>
+          <stringProp name="Argument.value">eyJhbGciOiJSUzI1NiIsImtpZCI6IkpXVFNpZ25pbmdDZXJ0LTIwMTUtU1RBR0UiLCJ4NXQiOiIzUW14SnZsUkFXMjhfTzMwR25wME1xc1NyMlUifQ.eyJzY29wZSI6WyJvcmlvbjpvcmlvbi1kZXYiXSwiY2xpZW50X2lkIjoib3Jpb25fZGV2IiwiaXNzIjoiUGluZ0ZlZGVyYXRlIiwiZXhwIjoxNTE1NTA3NjU4fQ.g1r-KSqgYIEowOfr-SSrX-PsS4juR7ZE5ge00j-kYseUpsKu3nXSAlg33_xhqMLFlhRrPK_2b5owd358XjVvWOAVwpADUn1p_CIZif2tNykqz3ipeQK66stGoAoUVSgD4NkALpkLNU0iJlSGRJ8cmM6NmAK-r2dR5Y8Vzf2AtBcMN-1tw5hpsnHWMDQp4JEzIHp4g1y2_dct471oi8SuA8G0GlWmj70Jsytm5p-bMOq6THeH54RXWhEg2D4ZaSF4KGLxUbw6k3Oltf5sgBUm7Yf3Vq8T_Kmmb7pT2OHMwegOl73P5IzY0tsKDF9IHWUeMYaJ_7AQO4flphZzxqdjQQ</stringProp>
+          <stringProp name="Argument.metadata">=</stringProp>
+        </elementProp>
+        <elementProp name="ServerName" elementType="Argument">
+          <stringProp name="Argument.name">ServerName</stringProp>
+          <stringProp name="Argument.value">workorder-stg.g4.app.cloud.comcast.net</stringProp>
+          <stringProp name="Argument.metadata">=</stringProp>
+        </elementProp>
+        <elementProp name="Protocol" elementType="Argument">
+          <stringProp name="Argument.name">Protocol</stringProp>
+          <stringProp name="Argument.value">https</stringProp>
+          <stringProp name="Argument.metadata">=</stringProp>
+        </elementProp>
+      </collectionProp>
+      <stringProp name="TestPlan.comments">Use this property to add user defined variable which are applicable at all operation of service</stringProp>
+    </Arguments>
+    <hashTree/>
+  </hashTree>
+</jmeterTestPlan>

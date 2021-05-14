@@ -1,0 +1,11 @@
+{
+"UpdateWorkorderRequest": { 
+  "Job": {
+   "DispatcherStatusCd": "X",
+   "OrderMgtSystem": "ORION"
+  },
+  "JobLocation": {
+   "AddrId": "273127325"
+  }
+}
+}

@@ -1,0 +1,41 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "definitions": {},
+    "id": "http://example.com/example.json",
+    "properties": {
+     "BookAppointmentResponseDetails": {
+       "id": "/properties/BookAppointmentResponseDetails", 
+    "properties": {
+        "BookAppointmentResponse": {
+            "id": "/properties/BookAppointmentResponse",
+            "properties": {
+                "code": {
+                	"required":true,
+                    "id": "/properties/BookAppointmentResponse/properties/code",
+                    "maxLength": 15,
+                    "minLength": 1,
+                    "type": "string"
+                },
+                "message": {
+                	"required":true,
+                    "id": "/properties/BookAppointmentResponse/properties/message",
+                    "maxLength": 100,
+                    "minLength": 1,
+                    "type": "string"
+                }
+            },
+            "required": [
+                "message",
+                "code"
+            ],
+            "type": "object"
+        }
+    },
+    "type": "object"
+     }
+   }, 
+   "required": [
+    "BookAppointmentResponseDetails"
+   ], 
+   "type": "object"
+}

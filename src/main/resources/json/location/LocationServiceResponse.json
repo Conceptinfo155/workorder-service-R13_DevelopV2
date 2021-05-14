@@ -1,0 +1,700 @@
+{
+    "responseItems": {
+        "capabilityInfo": {
+            "locationCapabilities": {
+                "capability": {
+                    "capabilityType": [
+                        {
+                            "product": "DigitalVideo"
+                        },
+                        {
+                            "product": "DigitalVoice"
+                        },
+                        {
+                            "product": "DigitalVoice:IMS"
+                        },
+                        {
+                            "product": "HighSpeedInternet"
+                        },
+                        {
+                            "product": "AnalogVideo"
+                        }
+                    ]
+                }
+            },
+            "locationCapabilityExceptions": {
+                "capability": {
+                    "capabilityType": []
+                }
+            }
+        },
+        "e911AddressInfo": {
+            "unitTypes": {},
+            "zipCode": {}
+        },
+        "geographyInfo": {
+            "censusBlock": "",
+            "censusTract": "",
+            "countyName": "SUFFOLK",
+            "fipsCode": "2502507000",
+            "latitude": "42.3640607385",
+            "longitude": "-71.0641606469",
+            "minorCivilDivision": "",
+            "placeName": "BOSTON",
+            "urbanization": "",
+            "vertexGeoCode": "220250100"
+        },
+        "marketHierarchy": [
+            {
+                "level": 0,
+                "marketId": 1,
+                "marketName": "NATIONAL"
+            },
+            {
+                "level": 1,
+                "marketId": 8617,
+                "marketName": "WEST DIVISION"
+            },
+            {
+                "level": 2,
+                "marketId": 10126,
+                "marketName": "TWIN CITIES MARKET"
+            },
+            {
+                "level": 3,
+                "marketId": 10163,
+                "marketName": "ST. PAUL, MN"
+            },
+            {
+                "level": 4,
+                "marketId": 10164,
+                "marketName": "ST. PAUL, MN TEST SYS PRIN"
+            },
+            {
+                "level": 5,
+                "marketId": 4192,
+                "marketName": "ANDOVER, MN TEST SPA"
+            }
+        ],
+        "marketInfo": {
+            "glCode": "000314",
+            "legacyMarketInfo": {
+                "CSGMarketInfo": {
+                    "Agent": "0600",
+                    "CSGSystem": "8011",
+                    "Principle": "1000"
+                },
+                "DSTMarketID": {
+                    "FranchiseTaxArea": "801110000600"
+                },
+                "legacyMarketIDSource": "CSG"
+            },
+            "legacyMarketType": "SPA",
+            "marketCapabilities": {
+                "capabilityName": {
+                    "capability": [
+                        "Video",
+                        "HighSpeedInternet",
+                        "Voice",
+                        "Wireless",
+                        "HomeSecurity"
+                    ]
+                }
+            },
+            "marketID": "4192",
+            "marketName": "ANDOVER, MN TEST SPA",
+            "parentMarketID": "10062",
+            "cuid": "AR026601"
+        },
+        "networkConnectivityInfo": {
+            "CMTS_FQDN": "CDN11.BATTLEMENT.CO.DENVER.COMCAST.NET",
+            "CRAN": "Denver",
+            "dropLocation": "",
+            "fiberNodeName": "IMBBO3",
+            "headendID": "",
+            "headendNetworkAddress": "10.253.206.4",
+            "headendType": "Motorola"
+        },
+        "postalAddress": {
+            "city": "BOSTON",
+            "country": "",
+            "dwellingCode": "",
+            "houseNumber": "1000",
+            "houseNumberPrefix": "",
+            "houseNumberSuffix": "",
+            "state": "MA",
+            "streetName": "WASHINGTON",
+            "streetPostDirection": "",
+            "streetPreDirection": "",
+            "streetSuffix": "ST",
+            "unitTypes": {
+                "unitSequence": "1",
+                "unitType": "STE",
+                "unitValue": "510"
+            },
+            "zipCode": {
+                "zip4": "2702",
+                "zip5": "02118"
+            }
+        },
+        "speedTierInfo": {
+            "serviceClassInfo": {
+                "serviceClassInfoType": [
+                    {
+                        "rateInfo": {
+                            "maxTrafficRateDOWN": "3.6",
+                            "maxTrafficRateUP": "1.2",
+                            "maxTrafficRealRateDOWN": "3",
+                            "maxTrafficRealRateUP": "1",
+                            "overProvisionMaxRateDOWN": "20",
+                            "overProvisionMaxRateUP": "20"
+                        },
+                        "serviceClassNameDOWN": "bci_basic1",
+                        "serviceClassNameUP": "bci_basic1_up"
+                    },
+                    {
+                        "rateInfo": {
+                            "maxTrafficRateDOWN": "7.5",
+                            "maxTrafficRateUP": "1.25",
+                            "maxTrafficRealRateDOWN": "6",
+                            "maxTrafficRealRateUP": "1",
+                            "overProvisionMaxRateDOWN": "25",
+                            "overProvisionMaxRateUP": "25"
+                        },
+                        "serviceClassNameDOWN": "perstar",
+                        "serviceClassNameUP": "perstar_up"
+                    },
+                    {
+                        "rateInfo": {
+                            "maxTrafficRateDOWN": "312.5",
+                            "maxTrafficRateUP": "31.25",
+                            "maxTrafficRealRateDOWN": "250",
+                            "maxTrafficRealRateUP": "25",
+                            "overProvisionMaxRateDOWN": "25",
+                            "overProvisionMaxRateUP": "25"
+                        },
+                        "serviceClassNameDOWN": "extrm16",
+                        "serviceClassNameUP": "extrm16_up"
+                    },
+                    {
+                        "rateInfo": {
+                            "maxTrafficRateDOWN": "131.25",
+                            "maxTrafficRateUP": "12.5",
+                            "maxTrafficRealRateDOWN": "131.25",
+                            "maxTrafficRealRateUP": "12.5",
+                            "overProvisionMaxRateDOWN": "0",
+                            "overProvisionMaxRateUP": "0"
+                        },
+                        "serviceClassNameDOWN": "gigabit",
+                        "serviceClassNameUP": "gigabit_up"
+                    },
+                    {
+                        "rateInfo": {
+                            "maxTrafficRateDOWN": "62.5",
+                            "maxTrafficRateUP": "6.25",
+                            "maxTrafficRealRateDOWN": "50",
+                            "maxTrafficRealRateUP": "5",
+                            "overProvisionMaxRateDOWN": "25",
+                            "overProvisionMaxRateUP": "25"
+                        },
+                        "serviceClassNameDOWN": "silver",
+                        "serviceClassNameUP": "silver_up"
+                    },
+                    {
+                        "rateInfo": {
+                            "maxTrafficRateDOWN": "131.25",
+                            "maxTrafficRateUP": "12.5",
+                            "maxTrafficRealRateDOWN": "105",
+                            "maxTrafficRealRateUP": "10",
+                            "overProvisionMaxRateDOWN": "25",
+                            "overProvisionMaxRateUP": "25"
+                        },
+                        "serviceClassNameDOWN": "speed",
+                        "serviceClassNameUP": "speed_up"
+                    },
+                    {
+                        "rateInfo": {
+                            "maxTrafficRateDOWN": "131.25",
+                            "maxTrafficRateUP": "12.5",
+                            "maxTrafficRealRateDOWN": "131.25",
+                            "maxTrafficRealRateUP": "12.5",
+                            "overProvisionMaxRateDOWN": "0",
+                            "overProvisionMaxRateUP": "0"
+                        },
+                        "serviceClassNameDOWN": "xwifimdu1",
+                        "serviceClassNameUP": "xwifimdu1_up"
+                    },
+                    {
+                        "rateInfo": {
+                            "maxTrafficRateDOWN": "17.6",
+                            "maxTrafficRateUP": "2.2",
+                            "maxTrafficRealRateDOWN": "17.6",
+                            "maxTrafficRealRateUP": "2.2",
+                            "overProvisionMaxRateDOWN": "0",
+                            "overProvisionMaxRateUP": "0"
+                        },
+                        "serviceClassNameDOWN": "xwifi",
+                        "serviceClassNameUP": "xwifi_up"
+                    },
+                    {
+                        "rateInfo": {
+                            "maxTrafficRateDOWN": "9.9",
+                            "maxTrafficRateUP": "2.2",
+                            "maxTrafficRealRateDOWN": "9.9",
+                            "maxTrafficRealRateUP": "2.2",
+                            "overProvisionMaxRateDOWN": "0",
+                            "overProvisionMaxRateUP": "0"
+                        },
+                        "serviceClassNameDOWN": "xcc",
+                        "serviceClassNameUP": "xcc_up"
+                    },
+                    {
+                        "rateInfo": {
+                            "maxTrafficRateDOWN": "36",
+                            "maxTrafficRateUP": "3.6",
+                            "maxTrafficRealRateDOWN": "36",
+                            "maxTrafficRealRateUP": "3.6",
+                            "overProvisionMaxRateDOWN": "0",
+                            "overProvisionMaxRateUP": "0"
+                        },
+                        "serviceClassNameDOWN": "xcal",
+                        "serviceClassNameUP": "xcal_up"
+                    },
+                    {
+                        "rateInfo": {
+                            "maxTrafficRateDOWN": "131.25",
+                            "maxTrafficRateUP": "12.5",
+                            "maxTrafficRealRateDOWN": "105",
+                            "maxTrafficRealRateUP": "10",
+                            "overProvisionMaxRateDOWN": "25",
+                            "overProvisionMaxRateUP": "25"
+                        },
+                        "serviceClassNameDOWN": "ultra",
+                        "serviceClassNameUP": "ultra_up"
+                    },
+                    {
+                        "rateInfo": {
+                            "maxTrafficRateDOWN": "30",
+                            "maxTrafficRateUP": "5",
+                            "maxTrafficRealRateDOWN": "30",
+                            "maxTrafficRealRateUP": "5",
+                            "overProvisionMaxRateDOWN": "0",
+                            "overProvisionMaxRateUP": "0"
+                        },
+                        "serviceClassNameDOWN": "stb_hsd",
+                        "serviceClassNameUP": "stb_hsd_up"
+                    },
+                    {
+                        "rateInfo": {
+                            "maxTrafficRateDOWN": "131.25",
+                            "maxTrafficRateUP": "12.5",
+                            "maxTrafficRealRateDOWN": "105",
+                            "maxTrafficRealRateUP": "10",
+                            "overProvisionMaxRateDOWN": "25",
+                            "overProvisionMaxRateUP": "25"
+                        },
+                        "serviceClassNameDOWN": "speed",
+                        "serviceClassNameUP": "speed_up"
+                    },
+                    {
+                        "rateInfo": {
+                            "maxTrafficRateDOWN": "62.5",
+                            "maxTrafficRateUP": "6.25",
+                            "maxTrafficRealRateDOWN": "50",
+                            "maxTrafficRealRateUP": "5",
+                            "overProvisionMaxRateDOWN": "25",
+                            "overProvisionMaxRateUP": "25"
+                        },
+                        "serviceClassNameDOWN": "silver",
+                        "serviceClassNameUP": "silver_up"
+                    },
+                    {
+                        "rateInfo": {
+                            "maxTrafficRateDOWN": "12.5",
+                            "maxTrafficRateUP": "1.25",
+                            "maxTrafficRealRateDOWN": "10",
+                            "maxTrafficRealRateUP": "1",
+                            "overProvisionMaxRateDOWN": "25",
+                            "overProvisionMaxRateUP": "25"
+                        },
+                        "serviceClassNameDOWN": "prepay",
+                        "serviceClassNameUP": "prepay_up"
+                    },
+                    {
+                        "rateInfo": {
+                            "maxTrafficRateDOWN": "7.5",
+                            "maxTrafficRateUP": "1.25",
+                            "maxTrafficRealRateDOWN": "6",
+                            "maxTrafficRealRateUP": "1",
+                            "overProvisionMaxRateDOWN": "25",
+                            "overProvisionMaxRateUP": "25"
+                        },
+                        "serviceClassNameDOWN": "perstar",
+                        "serviceClassNameUP": "perstar_up"
+                    },
+                    {
+                        "rateInfo": {
+                            "maxTrafficRateDOWN": "93.75",
+                            "maxTrafficRateUP": "6.25",
+                            "maxTrafficRealRateDOWN": "75",
+                            "maxTrafficRealRateUP": "5",
+                            "overProvisionMaxRateDOWN": "25",
+                            "overProvisionMaxRateUP": "25"
+                        },
+                        "serviceClassNameDOWN": "perfpro",
+                        "serviceClassNameUP": "perfpro_up"
+                    },
+                    {
+                        "rateInfo": {
+                            "maxTrafficRateDOWN": "31.25",
+                            "maxTrafficRateUP": "6.25",
+                            "maxTrafficRealRateDOWN": "25",
+                            "maxTrafficRealRateUP": "5",
+                            "overProvisionMaxRateDOWN": "25",
+                            "overProvisionMaxRateUP": "25"
+                        },
+                        "serviceClassNameDOWN": "perf2",
+                        "serviceClassNameUP": "perf2_up"
+                    },
+                    {
+                        "rateInfo": {
+                            "maxTrafficRateDOWN": "12.5",
+                            "maxTrafficRateUP": "1.25",
+                            "maxTrafficRealRateDOWN": "10",
+                            "maxTrafficRealRateUP": "1",
+                            "overProvisionMaxRateDOWN": "25",
+                            "overProvisionMaxRateUP": "25"
+                        },
+                        "serviceClassNameDOWN": "inte",
+                        "serviceClassNameUP": "inte_up"
+                    },
+                    {
+                        "rateInfo": {
+                            "maxTrafficRateDOWN": "6.25",
+                            "maxTrafficRateUP": "1.25",
+                            "maxTrafficRealRateDOWN": "5",
+                            "maxTrafficRealRateUP": "1",
+                            "overProvisionMaxRateDOWN": "25",
+                            "overProvisionMaxRateUP": "25"
+                        },
+                        "serviceClassNameDOWN": "inet5",
+                        "serviceClassNameUP": "inet5_up"
+                    },
+                    {
+                        "rateInfo": {
+                            "maxTrafficRateDOWN": "187.5",
+                            "maxTrafficRateUP": "25",
+                            "maxTrafficRealRateDOWN": "150",
+                            "maxTrafficRealRateUP": "20",
+                            "overProvisionMaxRateDOWN": "25",
+                            "overProvisionMaxRateUP": "25"
+                        },
+                        "serviceClassNameDOWN": "extrm",
+                        "serviceClassNameUP": "extrm_up"
+                    },
+                    {
+                        "rateInfo": {
+                            "maxTrafficRateDOWN": "6.6",
+                            "maxTrafficRateUP": "1.1",
+                            "maxTrafficRealRateDOWN": "6.6",
+                            "maxTrafficRealRateUP": "1.1",
+                            "overProvisionMaxRateDOWN": "0",
+                            "overProvisionMaxRateUP": "0"
+                        },
+                        "serviceClassNameDOWN": "extrm5",
+                        "serviceClassNameUP": "extrm5_up"
+                    },
+                    {
+                        "rateInfo": {
+                            "maxTrafficRateDOWN": "256.25",
+                            "maxTrafficRateUP": "25",
+                            "maxTrafficRealRateDOWN": "205",
+                            "maxTrafficRealRateUP": "20",
+                            "overProvisionMaxRateDOWN": "25",
+                            "overProvisionMaxRateUP": "25"
+                        },
+                        "serviceClassNameDOWN": "extrm4",
+                        "serviceClassNameUP": "extrm4_up"
+                    },
+                    {
+                        "rateInfo": {
+                            "maxTrafficRateDOWN": "187.5",
+                            "maxTrafficRateUP": "25",
+                            "maxTrafficRealRateDOWN": "150",
+                            "maxTrafficRealRateUP": "20",
+                            "overProvisionMaxRateDOWN": "25",
+                            "overProvisionMaxRateUP": "25"
+                        },
+                        "serviceClassNameDOWN": "extrm3",
+                        "serviceClassNameUP": "extrm3_up"
+                    },
+                    {
+                        "rateInfo": {
+                            "maxTrafficRateDOWN": "187.5",
+                            "maxTrafficRateUP": "25",
+                            "maxTrafficRealRateDOWN": "150",
+                            "maxTrafficRealRateUP": "20",
+                            "overProvisionMaxRateDOWN": "25",
+                            "overProvisionMaxRateUP": "25"
+                        },
+                        "serviceClassNameDOWN": "extrm2",
+                        "serviceClassNameUP": "extrm2_up"
+                    },
+                    {
+                        "rateInfo": {
+                            "maxTrafficRateDOWN": "3.75",
+                            "maxTrafficRateUP": ".96",
+                            "maxTrafficRealRateDOWN": "3",
+                            "maxTrafficRealRateUP": ".768",
+                            "overProvisionMaxRateDOWN": "25",
+                            "overProvisionMaxRateUP": "25"
+                        },
+                        "serviceClassNameDOWN": "ecnypls",
+                        "serviceClassNameUP": "ecnypls_up"
+                    },
+                    {
+                        "rateInfo": {
+                            "maxTrafficRateDOWN": "0",
+                            "maxTrafficRateUP": "0",
+                            "maxTrafficRealRateDOWN": "0",
+                            "maxTrafficRealRateUP": "0",
+                            "overProvisionMaxRateDOWN": "0",
+                            "overProvisionMaxRateUP": "0"
+                        },
+                        "serviceClassNameDOWN": "default",
+                        "serviceClassNameUP": "default_up"
+                    },
+                    {
+                        "rateInfo": {
+                            "maxTrafficRateDOWN": ".064",
+                            "maxTrafficRateUP": ".064",
+                            "maxTrafficRealRateDOWN": ".064",
+                            "maxTrafficRealRateUP": ".064",
+                            "overProvisionMaxRateDOWN": "0",
+                            "overProvisionMaxRateUP": "0"
+                        },
+                        "serviceClassNameDOWN": "cdv_signal",
+                        "serviceClassNameUP": "cdv_signal_up"
+                    },
+                    {
+                        "rateInfo": {
+                            "maxTrafficRateDOWN": "120",
+                            "maxTrafficRateUP": "18",
+                            "maxTrafficRealRateDOWN": "100",
+                            "maxTrafficRealRateUP": "15",
+                            "overProvisionMaxRateDOWN": "20",
+                            "overProvisionMaxRateUP": "20"
+                        },
+                        "serviceClassNameDOWN": "bci_wb9",
+                        "serviceClassNameUP": "bci_wb9_up"
+                    },
+                    {
+                        "rateInfo": {
+                            "maxTrafficRateDOWN": "60",
+                            "maxTrafficRateUP": "12",
+                            "maxTrafficRealRateDOWN": "50",
+                            "maxTrafficRealRateUP": "10",
+                            "overProvisionMaxRateDOWN": "20",
+                            "overProvisionMaxRateUP": "20"
+                        },
+                        "serviceClassNameDOWN": "bci_wb8",
+                        "serviceClassNameUP": "bci_wb8_up"
+                    },
+                    {
+                        "rateInfo": {
+                            "maxTrafficRateDOWN": "8.4",
+                            "maxTrafficRateUP": "1.2",
+                            "maxTrafficRealRateDOWN": "7",
+                            "maxTrafficRealRateUP": "1",
+                            "overProvisionMaxRateDOWN": "20",
+                            "overProvisionMaxRateUP": "20"
+                        },
+                        "serviceClassNameDOWN": "bci_wb7",
+                        "serviceClassNameUP": "bci_wb7_up"
+                    },
+                    {
+                        "rateInfo": {
+                            "maxTrafficRateDOWN": "300",
+                            "maxTrafficRateUP": "30",
+                            "maxTrafficRealRateDOWN": "250",
+                            "maxTrafficRealRateUP": "25",
+                            "overProvisionMaxRateDOWN": "20",
+                            "overProvisionMaxRateUP": "20"
+                        },
+                        "serviceClassNameDOWN": "bci_wb6",
+                        "serviceClassNameUP": "bci_wb6_up"
+                    },
+                    {
+                        "rateInfo": {
+                            "maxTrafficRateDOWN": "180",
+                            "maxTrafficRateUP": "24",
+                            "maxTrafficRealRateDOWN": "150",
+                            "maxTrafficRealRateUP": "20",
+                            "overProvisionMaxRateDOWN": "20",
+                            "overProvisionMaxRateUP": "20"
+                        },
+                        "serviceClassNameDOWN": "bci_wb5",
+                        "serviceClassNameUP": "bci_wb5_up"
+                    },
+                    {
+                        "rateInfo": {
+                            "maxTrafficRateDOWN": "120",
+                            "maxTrafficRateUP": "24",
+                            "maxTrafficRealRateDOWN": "100",
+                            "maxTrafficRealRateUP": "20",
+                            "overProvisionMaxRateDOWN": "20",
+                            "overProvisionMaxRateUP": "20"
+                        },
+                        "serviceClassNameDOWN": "bci_wb4",
+                        "serviceClassNameUP": "bci_wb4_up"
+                    },
+                    {
+                        "rateInfo": {
+                            "maxTrafficRateDOWN": "90",
+                            "maxTrafficRateUP": "18",
+                            "maxTrafficRealRateDOWN": "75",
+                            "maxTrafficRealRateUP": "15",
+                            "overProvisionMaxRateDOWN": "20",
+                            "overProvisionMaxRateUP": "20"
+                        },
+                        "serviceClassNameDOWN": "bci_wb3",
+                        "serviceClassNameUP": "bci_wb3_up"
+                    },
+                    {
+                        "rateInfo": {
+                            "maxTrafficRateDOWN": "32.4",
+                            "maxTrafficRateUP": "8.4",
+                            "maxTrafficRealRateDOWN": "27",
+                            "maxTrafficRealRateUP": "7",
+                            "overProvisionMaxRateDOWN": "20",
+                            "overProvisionMaxRateUP": "20"
+                        },
+                        "serviceClassNameDOWN": "bci_wb2",
+                        "serviceClassNameUP": "bci_wb2_up"
+                    },
+                    {
+                        "rateInfo": {
+                            "maxTrafficRateDOWN": "19.2",
+                            "maxTrafficRateUP": "3.6",
+                            "maxTrafficRealRateDOWN": "16",
+                            "maxTrafficRealRateUP": "3",
+                            "overProvisionMaxRateDOWN": "20",
+                            "overProvisionMaxRateUP": "20"
+                        },
+                        "serviceClassNameDOWN": "bci_wb1",
+                        "serviceClassNameUP": "bci_wb1_up"
+                    },
+                    {
+                        "rateInfo": {
+                            "maxTrafficRateDOWN": "30",
+                            "maxTrafficRateUP": "12",
+                            "maxTrafficRealRateDOWN": "25",
+                            "maxTrafficRealRateUP": "10",
+                            "overProvisionMaxRateDOWN": "20",
+                            "overProvisionMaxRateUP": "20"
+                        },
+                        "serviceClassNameDOWN": "bci_wb12",
+                        "serviceClassNameUP": "bci_wb12_up"
+                    },
+                    {
+                        "rateInfo": {
+                            "maxTrafficRateDOWN": "120",
+                            "maxTrafficRateUP": "24",
+                            "maxTrafficRealRateDOWN": "100",
+                            "maxTrafficRealRateUP": "20",
+                            "overProvisionMaxRateDOWN": "20",
+                            "overProvisionMaxRateUP": "20"
+                        },
+                        "serviceClassNameDOWN": "bci_wb11",
+                        "serviceClassNameUP": "bci_wb11_up"
+                    },
+                    {
+                        "rateInfo": {
+                            "maxTrafficRateDOWN": "120",
+                            "maxTrafficRateUP": "12",
+                            "maxTrafficRealRateDOWN": "100",
+                            "maxTrafficRealRateUP": "10",
+                            "overProvisionMaxRateDOWN": "20",
+                            "overProvisionMaxRateUP": "20"
+                        },
+                        "serviceClassNameDOWN": "bci_wb10",
+                        "serviceClassNameUP": "bci_wb10_up"
+                    },
+                    {
+                        "rateInfo": {
+                            "maxTrafficRateDOWN": "26.4",
+                            "maxTrafficRateUP": "6",
+                            "maxTrafficRealRateDOWN": "22",
+                            "maxTrafficRealRateUP": "5",
+                            "overProvisionMaxRateDOWN": "20",
+                            "overProvisionMaxRateUP": "20"
+                        },
+                        "serviceClassNameDOWN": "bci_tw1",
+                        "serviceClassNameUP": "bci_tw1_up"
+                    },
+                    {
+                        "rateInfo": {
+                            "maxTrafficRateDOWN": "7.2",
+                            "maxTrafficRateUP": "1.2",
+                            "maxTrafficRealRateDOWN": "6",
+                            "maxTrafficRealRateUP": "1",
+                            "overProvisionMaxRateDOWN": "20",
+                            "overProvisionMaxRateUP": "20"
+                        },
+                        "serviceClassNameDOWN": "bci_start",
+                        "serviceClassNameUP": "bci_start_up"
+                    },
+                    {
+                        "rateInfo": {
+                            "maxTrafficRateDOWN": "19.2",
+                            "maxTrafficRateUP": "2.4",
+                            "maxTrafficRealRateDOWN": "16",
+                            "maxTrafficRealRateUP": "2",
+                            "overProvisionMaxRateDOWN": "20",
+                            "overProvisionMaxRateUP": "20"
+                        },
+                        "serviceClassNameDOWN": "bci_pref1",
+                        "serviceClassNameUP": "bci_pref1_up"
+                    },
+                    {
+                        "rateInfo": {
+                            "maxTrafficRateDOWN": "26.4",
+                            "maxTrafficRateUP": "6",
+                            "maxTrafficRealRateDOWN": "22",
+                            "maxTrafficRealRateUP": "5",
+                            "overProvisionMaxRateDOWN": "20",
+                            "overProvisionMaxRateUP": "20"
+                        },
+                        "serviceClassNameDOWN": "bci_dlx",
+                        "serviceClassNameUP": "bci_dlx_up"
+                    }
+                ]
+            }
+        },
+        "billingDetailsInfo": {
+            "csgDetails": {
+                "cSGDetailsType": {
+                    "technicianArea": "FA",
+                    "houseKey": "02114270201442"
+                }
+            }
+        },
+        "telephonyInfo": {
+            "I2": "TRUE",
+            "ilecName": "VERIZON NEW ENGLAND INC.",
+            "lata": "128.0",
+            "lataName": "EASTERN MASS",
+            "psapAgency": "JAMES CITY EMERGENCY COMMUNICATIONS",
+            "psapId": "7685.0",
+            "rateCenterCertification": "CERTIFIED",
+            "rateCenterName": "IMBCVBORC3",
+            "rateCenterServiceable": {
+                "serviceable": [
+                    "IMS:Business"
+                ]
+            },
+            "tnOrderPool": "IMBCVBORC3",
+            "wireCenter": "BSTNMABO"
+        }
+    }
+}

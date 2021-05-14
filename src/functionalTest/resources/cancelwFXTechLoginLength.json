@@ -1,0 +1,12 @@
+{
+"UpdateWorkorderRequest": {
+  "WFXTechLogin": "0110556234234234234",
+  "Job": {
+   "DispatcherStatusCd": "X",
+   "OrderMgtSystem": "ORION"
+  },
+  "JobLocation": {
+   "AddrId": "273127325"
+  }
+}
+}

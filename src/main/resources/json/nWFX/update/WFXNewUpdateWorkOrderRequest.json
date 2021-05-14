@@ -1,0 +1,226 @@
+{
+	"type": "object",
+	"properties": {
+		"WFXDispatchLogin": {
+			"type": "string"
+		},
+		"CodeSrc": {
+			"type": "string"
+		},
+		"Job": {
+			"type": "object",
+			"properties": {
+				"BusinessUnit": {
+					"type": "string"
+				},
+				"DispatcherStatusCd": {
+					"type": "string"
+				},
+				"CreateDateTime": {
+					"type": "string"
+				},
+				"JobNum": {
+					"type": "string"
+				},
+				"ScheduleDate": {
+					"type": "string"
+				},
+				"TimeSlotCd": {
+					"type": "string"
+				},
+				"JobTypeCd": {
+					"type": "string"
+				},
+				"JobUnits": {
+					"type": "integer"
+				},
+				"CallFirstPhoneNum": {
+					"type": "string"
+				},
+				"TroubleCallIndicator": {
+					"type": "string"
+				},
+				"JobComment": {
+					"type": "string"
+				},
+				"OrderComment": {
+					"type": "string"
+				},
+				"OrderMgtSystem":{
+					"type": "string"
+				},
+				"JobClassCd": {
+					"type": "string"
+				},
+				"JobReasonCdList": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"properties": {
+							"JobReasonCd": {
+								"type": "string",
+								"examples": [
+									"C1"
+								]
+							}
+						}
+					}
+				},
+				"TechnicianNum": {
+					"type": "string"
+				}
+			}
+		},
+		"JobCustomer": {
+			"type": "object",
+			"properties": {
+				
+				"AccountId": {
+					"type": "string"
+				},
+				"LastName": {
+					"type": "string"
+				},
+				"FirstName": {
+					"type": "string"
+				},
+				"HomePhoneNum": {
+					"type": "string"
+				},
+				"WorkPhoneNum": {
+					"type": "string"
+				},
+				"EmailAddr": {
+					"type": "string"
+				}
+			}
+		},
+		"JobLocation": {
+			"type": "object",
+			"properties": {
+				"Address": {
+					"type": "object",
+					"properties": {
+						"AddrLine1": {
+							"type": "string"
+						},
+						"AddrLine2": {
+							"type": "string"
+						},
+						"City": {
+							"type": "string"
+						},
+						"State": {
+							"type": "string"
+						},
+						"ZipCode": {
+							"type": "string"
+						}
+					}
+				},
+				"RouteCriteria": {
+					"type": "string"
+				}
+			}
+		},
+		"JobProductList": {
+			"type": "array",
+			"items": {
+				"type": "object",
+				"properties": {
+					"ActionCd": {
+						"type": "string"
+					},
+					"ParentProductCd": {
+						"type": "string"
+					},
+					"ParentProductDesc": {
+						"type": "string"
+					},
+					"VoicePhoneNum": {
+						"type": "string"
+					},
+					"VoipPortNum": {
+						"type": "string"
+					},
+					"ProductLOB": {
+						"type": "string"
+					},
+					"outlet": {
+						"type": "string"
+					},
+					"AccountId": {
+						"type": "string"
+					},
+					"ChildProductsList": {
+						"type": "array",
+						"items": {
+							"type": "object",
+							"properties": {
+								"ActionCd": {
+									"type": "string"
+								},
+								"ChildProductCd": {
+									"type": "string"
+								},
+								"ChildProductDesc": {
+									"type": "string"
+								},
+								"VoicePhoneNum": {
+									"type": "string"
+								},
+								"VoipPortNum": {
+									"type": "string"
+								},
+								"ProductLOB": {
+									"type": "string"
+								},
+								"outlet": {
+									"type": "string"
+								},
+								"AccountId": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"JobEquipmentList": {
+			"type": "array",
+			"items": {
+				"type": "object",
+				"properties": {
+					"SerialNum": {
+						"type": "string"
+					},
+					"EquipTypeCd": {
+						"type": "string"
+					},
+					"EquipStatusCd": {
+						"type": "string"
+					},
+					"ActionCd": {
+						"type": "string"
+					},
+					"EquipMake": {
+						"type": "string"
+					},
+					"EquipModelCd": {
+						"type": "string"
+					},
+					"DeviceAddress": {
+						"type": "string"
+					},
+					"DeviceAddress2": {
+						"type": "string"
+					},
+					"OwnerCd": {
+						"type": "string"
+					}
+				}
+			}
+		}
+	}
+}

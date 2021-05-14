@@ -1,0 +1,17 @@
+{
+  "type": "object",
+  "definitions": {},
+  "properties": {
+    "UpdateWorkorderResponse": {
+      "type": "object",
+      "properties": {
+        "workOrderNum": {
+          "type": "string"
+        },
+        "response": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

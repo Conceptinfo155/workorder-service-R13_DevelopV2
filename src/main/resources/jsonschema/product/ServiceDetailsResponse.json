@@ -1,0 +1,441 @@
+{
+	"type": "object",
+	"properties": {
+		"servicedetails": {
+			"type": "object",
+			"properties": {
+				"customer": {
+					"type": "object",
+					"properties": {
+						"customerName": {
+							"type": "string"
+						},
+						"customerType": {
+							"type": "string"
+						},
+						"customerAccountNumber": {
+							"type": "string"
+						},
+						"lineOfBusiness": {
+							"type": "string"
+						},
+						"crmCustomerId": {
+							"type": "string"
+						},
+						"customerCRMSystem": {
+							"type": "string"
+						},
+						"characteristics": {
+							"type": "array",
+							"items": {
+								"type": "object",
+								"properties": {
+									"attributeName": {
+										"type": "string"
+									},
+									"attributeValue": {
+										"type": "string"
+									}
+								}
+							}
+						},
+						"site": {
+							"type": "array",
+							"items": {
+								"type": "object",
+								"properties": {
+									"siteCLLI": {
+										"type": "string"
+									},
+									"latitude": {
+										"type": "string"
+									},
+									"longitude": {
+										"type": "string"
+									},
+									"siteAddress": {
+										"type": "string"
+									},
+									"address1": {
+										"type": "string"
+									},
+									"address2": {
+										"type": "string"
+									},
+									"city": {
+										"type": "string"
+									},
+									"state": {
+										"type": "string"
+									},
+									"zip": {
+										"type": "string"
+									},
+									"siteName": {
+										"type": "string"
+									},
+									"siteCRMSystem": {
+										"type": "string"
+									},
+									"crmSiteId": {
+										"type": "string"
+									},
+									"customerSiteName": {
+										"type": "string"
+									},
+									"customerUNQID": {
+										"type": "string"
+									},
+									"characteristics": {
+										"type": "array",
+										"items": {
+											"type": "object",
+											"properties": {
+												"attributeName": {
+													"type": "string"
+												},
+												"attributeValue": {
+													"type": "string"
+												}
+											}
+										}
+									},
+									"service": {
+										"type": "array",
+										"items": {
+											"type": "object",
+											"properties": {
+												"uploadSpeed": {
+													"type": "string"
+												},
+												"downloadSpeed": {
+													"type": "string"
+												},
+												"serviceName": {
+													"type": "string"
+												},
+												"serviceId": {
+													"type": "string"
+												},
+												"solutionId": {
+													"type": "string"
+												},
+												"serviceInstanceId": {
+													"type": "string"
+												},
+												"transportType": {
+													"type": "string"
+												},
+												"tierName": {
+													"type": "string"
+												},
+												"serviceType": {
+													"type": "string"
+												},
+												"serviceTopologyName": {
+													"type": "string"
+												},
+												"underlayIndicator": {
+													"type": "string"
+												},
+												"serviceStatus": {
+													"type": "string"
+												},
+												"customerUNQID": {
+													"type": "string"
+												},
+												"associtedServiceUNQID": {
+													"type": "array",
+													"items": {
+														"type": "string"
+													}
+												},
+												"characteristics": {
+													"type": "array",
+													"items": {
+														"type": "object",
+														"properties": {
+															"attributeName": {
+																"type": "string"
+															},
+															"attributeValue": {
+																"type": "string"
+															}
+														}
+													}
+												},
+												"device": {
+													"type": "array",
+													"items": {
+														"type": "object",
+														"properties": {
+															"deviceName": {
+																"type": "string"
+															},
+															"ownedBy": {
+																"type": "string"
+															},
+															"serialNumber": {
+																"type": "string"
+															},
+															"isWifiDevice": {
+																"type": "string"
+															},
+															"deviceFQDN": {
+																"type": "string"
+															},
+															"deviceCLLI": {
+																"type": "string"
+															},
+															"deviceIP": {
+																"type": "string"
+															},
+															"macAddress": {
+																"type": "string"
+															},
+															"deviceOperationalRole": {
+																"type": "string"
+															},
+															"deviceType": {
+																"type": "string"
+															},
+															"make": {
+																"type": "string"
+															},
+															"model": {
+																"type": "string"
+															},
+															"deviceManufacturer": {
+																"type": "string"
+															},
+															"deviceMarket": {
+																"type": "string"
+															},
+															"serviceID": {
+																"type": "string"
+															},
+															"status": {
+																"type": "string"
+															},
+															"deviceFunctionalStatus": {
+																"type": "string"
+															},
+															"siteUNQID": {
+																"type": "string"
+															},
+															"portUNQID": {
+																"type": "string"
+															},
+															"deviceAction": {
+																"type": "string"
+															},
+															"characteristics": {
+																"type": "array",
+																"items": {
+																	"type": "object",
+																	"properties": {
+																		"attributeName": {
+																			"type": "string"
+																		},
+																		"attributeValue": {
+																			"type": "string"
+																		}
+																	}
+																}
+															}
+														}
+													}
+												},
+												"ipBlock": {
+													"type": "array",
+													"items": {
+														"type": "object",
+														"properties": {
+															"ipBlockUNQID": {
+																"type": "string"
+															},
+															"ipBlockVersion": {
+																"type": "string"
+															},
+															"ipBlockType": {
+																"type": "string"
+															},
+															"ipBlockSize": {
+																"type": "string"
+															},
+															"ipBlockUsableRange": {
+																"type": "string"
+															},
+															"ipBlockSubnetMask": {
+																"type": "string"
+															},
+															"ipBlockGatewayIP": {
+																"type": "string"
+															},
+															"serviceUNQID": {
+																"type": "string"
+															},
+															"portUNQID": {
+																"type": "string"
+															}
+														}
+													}
+												}
+											}
+										}
+									},
+									"port": {
+										"type": "array",
+										"items": {
+											"type": "object",
+											"properties": {
+												"portUNQID": {
+													"type": "string"
+												},
+												"name": {
+													"type": "string"
+												},
+												"type": {
+													"type": "string"
+												},
+												"bandwidth": {
+													"type": "string"
+												},
+												"MEFNIType": {
+													"type": "string"
+												},
+												"cardTypName": {
+													"type": "string"
+												},
+												"cardName": {
+													"type": "string"
+												},
+												"cardSerialNumber": {
+													"type": "string"
+												},
+												"provisionStatus": {
+													"type": "string"
+												},
+												"deviceUNQID": {
+													"type": "string"
+												},
+												"ipBlockUNQID": {
+													"type": "string"
+												},
+												"characteristics": {
+													"type": "array",
+													"items": {
+														"type": "object",
+														"properties": {
+															"attributeName": {
+																"type": "string"
+															},
+															"attributeValue": {
+																"type": "string"
+															}
+														}
+													}
+												}
+											}
+										}
+									},
+									"connectivityDetails": {
+										"$id": "/properties/SolutionDetails/properties/connectivityDetails",
+										"type": "array",
+										"items": {
+											"$id": "/properties/SolutionDetails/properties/connectivityDetails/items",
+											"type": "object",
+											"properties": {
+												"connectivityUNQID": {
+													"$id": "/properties/SolutionDetails/properties/connectivityDetails/items/properties/connectivityUNQID",
+													"type": "string",
+													"title": "The connectivityUNQID Schema ",
+													"default": 0,
+													"examples": [
+														27990931
+													]
+												},
+												"connectivityName": {
+													"$id": "/properties/SolutionDetails/properties/connectivityDetails/items/properties/connectivityName",
+													"type": "string",
+													"title": "The connectivityName Schema ",
+													"default": "",
+													"examples": [
+														"ETHERNET_2401820"
+													]
+												},
+												"connectivityType": {
+													"$id": "/properties/SolutionDetails/properties/connectivityDetails/items/properties/connectivityType",
+													"type": "string",
+													"title": "The connectivityType Schema ",
+													"default": "",
+													"examples": [
+														"ETHERNET"
+													]
+												},
+												"connectivityDIMObject": {
+													"$id": "/properties/SolutionDetails/properties/connectivityDetails/items/properties/connectivityDIMObject",
+													"type": "string",
+													"title": "The connectivityDIMObject Schema ",
+													"default": "",
+													"examples": [
+														"Link"
+													]
+												},
+												"aendDeviceUNQID": {
+													"$id": "/properties/SolutionDetails/properties/connectivityDetails/items/properties/aendDeviceUNQID",
+													"type": "string",
+													"title": "The aendDeviceUNQID Schema ",
+													"default": "",
+													"examples": [
+														"513500"
+													]
+												},
+												"aendPortUNQID": {
+													"$id": "/properties/SolutionDetails/properties/connectivityDetails/items/properties/aendPortUNQID",
+													"type": "string",
+													"title": "The aendPortUNQID Schema ",
+													"default": "",
+													"examples": [
+														"6451657"
+													]
+												},
+												"zendDeviceUNQID": {
+													"$id": "/properties/SolutionDetails/properties/connectivityDetails/items/properties/zendDeviceUNQID",
+													"type": "string",
+													"title": "The zendDeviceUNQID Schema ",
+													"default": "",
+													"examples": [
+														""
+													]
+												},
+												"zendPortUNQID": {
+													"$id": "/properties/SolutionDetails/properties/connectivityDetails/items/properties/zendPortUNQID",
+													"type": "string",
+													"title": "The zendPortUNQID Schema ",
+													"default": 0,
+													"examples": [
+														"18053409"
+													]
+												},
+												"serviceUNQID": {
+													"$id": "/properties/SolutionDetails/properties/connectivityDetails/items/properties/serviceUNQID",
+													"type": "string",
+													"title": "The serviceUNQID Schema ",
+													"default": 0,
+													"examples": [
+														"4706278"
+													]
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

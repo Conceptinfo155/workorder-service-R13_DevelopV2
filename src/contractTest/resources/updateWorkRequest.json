@@ -1,0 +1,42 @@
+{
+                "UpdateWorkorderRequest": {
+                                "WFXTechLogin": "ORION",
+                                "Job": {
+                                
+                                                "DispatcherStatusCd": "2",
+                                                "CreateDateTime": "2017-04-28T14:30:00-04:00",
+                                                "JobNum": "0000",
+                                                "ScheduleDate": "2017-07-30",
+                                                "TimeSlotCd": "0",
+                                                "JobTypeCd": "BD",
+                                                "JobUnits": "5",
+                                                "CallFirstPhoneNum": "13qweqweqweqwe",
+                                                "TroubleCallIndicator": "8",
+                                                "JobComment": "TEST",
+                                                "OrderComment": "test test",
+                                                "OrderMgtSystem": "ORION"
+                                
+                                },
+                                "JobCustomer": {
+                                                "CustomerId": "30370000001",
+
+                                                "LastName": "Doe",
+                                                "FirstName": "john",
+                                                "HomePhoneNum": "7897987",
+                                                "WorkPhoneNum": "7897987",
+                                                "EmailAddr": "xyz@abc.com"
+                                },
+                                "JobLocation": {
+                                                "Address": {
+                                                                "AddrLine1": "1354 E Boot Road",
+                                                                "AddrLine2": "WEST",
+                                                                "City": "WEST CHESTER",
+                                                                "State": "PA",
+                                                                "ZipCode":"2323"
+                                                                
+                                                },
+                                                "AddrId": "205192378"
+                                                
+                                }
+                }
+}

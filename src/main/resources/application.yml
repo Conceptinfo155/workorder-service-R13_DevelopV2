@@ -1,0 +1,842 @@
+
+orion:
+  build:
+    version: 2018.11.1
+  properties:
+    type: local-properties
+    version: 1.0  
+  security: 
+    rest: 
+      authenticated: 
+        paths: /workorder/v2/**
+xsp.security.rest.authenticated.paths: /workorder/v2/**    
+xsp.security.provider.pf.endpoint.tokenMgr1: https://websec-int.cable.comcast.com/ext/jwtsigningcert/jwks
+xsp.security.pf.server.url: https://websec-int.cable.comcast.com/as/token.oauth2    
+spring:
+  application.name: workorderv2-service
+
+logstash:
+ tcpConfig:
+  hostname: omwls-i.gslb2.comcast.com
+  port: 24514  
+
+oauth: 
+  server: 
+    url: https://websec-int.cable.comcast.com/as/token.oauth2
+    clientId: orionmiddleware_sec
+    client_secret: MDhmOTE5ODkzOTFhNGVhYmI0YTNhZjk2NGQ1ODc2NWE=
+    scope: wfa:workforce
+    grant_type: client_credentials
+authServer:
+  #publicKey: -----BEGIN PUBLIC KEY-----MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlwdc0xSbf1g7BpqGuRS+B0msyNps92PdLwBLS9I1QXB3vcwwuDtNG/9cOYm6Z3ntAm45/rBuh5JryjGBRGLr2Gi4taWuM68yyvPTcTIT3H+avwLxXnA0qO3H4jGG4c90pfsoobfRDa52JC1Q5ytxdpCfQ6h7KOe6BqcuCowB9O2wZqZ6wPzPp3c41S3QgJK+CNfK+/9RueAF/rpCD+qMctHjhr/yNU2+Ccaw+bgt0bUlo6ZAtJM8WRa51qGXuUs2mVc2SNsQOYtdmXBIV0FvmfBpx5ptV54pxMkFhXhBEvMDJGRZnCdlmk80Z6g2IoHWu4NQiHpff3DI9DrN4BsAAQIDAQAB-----END PUBLIC KEY-----
+  scope: orion:orion-dev,orion:amdocs,orion:order
+
+tnFeatures:
+ installbase.isEnabled: false
+ vms.isEnabled: true
+ 
+installbase:
+  tnFeatures:
+    url: https://orion-gateway-qa.u1.app.cloud.comcast.net/installbase/v1/voice/tn/features
+    
+vms:
+  tnFeatures:
+    serviceType: BV
+    url: https://vmsgateway-qa.u1.app.cloud.comcast.net/vmsline/v1/line/workOrderDetails/design/{designId}
+    tnno: tnno
+    tntype: tntype
+    primary: primary
+    voiceMailValue: true
+  
+amilgetworkorder:
+  #url: https://ogwws.orion.sys.comcast.net:13443/InvokeWorkOrderDetails_EG/
+  #url: https://ogwws.orion.sys.comcast.net:12443/InvokeWorkOrderDetails_EG/
+  #url: http://orionlogst-qc-ld.ula.comcast.net:8089/getdetails/
+  url: http://omw1-wc-02p.cable.comcast.com:9080/WorkorderService_V2_ODOWorkorder
+  authToken: YWRtaW46YWRtaW4=
+  
+workorder.parallelcall.isEnabled: true
+  
+product:
+  getServiceDetails:
+    endpoint: https://orion-gateway-qa.u1.app.cloud.comcast.net/product/v3/servicedetails
+    #endpoint: http://localhost:8085/product
+     
+site.enabled: true 
+  
+eureka: 
+  client: 
+    enabled:  false
+
+cwo:
+  AddrId: WO_CW_101
+  Date: WO_CW_101
+  DispatcherStatusCd: WO_CW_101
+  JobTypeCd: WO_CW_101
+  LOC-GLX-930: WO_CW_103
+  OrderMgtSystem: WO_CW_101
+  packet: WO_UW_102
+  SPA: WO_CW_103
+  WFXTechLogin: WO_CW_101
+  WO_CW_105: WO_CW_105
+uwo:
+  AddrId: WO_CW_101
+  Date: WO_CW_101
+  DispatcherStatusCd: WO_CW_101
+  JobTypeCd: WO_CW_101
+  LOC-GLX-930: WO_UW_103
+  OrderMgtSystem: WO_CW_101
+  packet: WO_UW_102
+  SPA: WO_UW_103
+  WFXTechLogin: WO_CW_101
+  WO_UW_105: WO_UW_105
+
+woconstants:
+  optionId: 16247
+  reservationId: 121415
+  scheduleDate: 2019-05-07
+  timeSlotCd: 0
+  jobNum: C
+  woPrefix: 'NO'
+
+orionService:
+ upstream: ODO
+ downstream: WFX
+
+
+  
+sleuth:
+      enabled: true
+      sampler: 
+        percentage: 1.0
+            
+zipkin:
+       enabled: true
+       baseUrl: http://192.168.0.11:9411/
+
+logging:
+  pattern:
+    console: "%d %-5level %logger : %msg%n"
+    file: "%d %-5level [%thread] %logger : %msg%n"
+  level:
+    org.springframework.web: WARN
+    com.comcast.orion: DEBUG
+  file: logs/workorder-service.log
+server:
+  port: 9076
+
+xsp:
+  security:
+    authServer:
+      configs:
+       - endpointPatterns: location,orion,schedule,site,notes,referencedata,ods,updateworkorder,vms,product,account,onp
+         username: orion_dev_sec
+         secret: 12b6a3c019024c02b4271b5d1c257f3a
+         scopes: orion:orion-dev
+       - endpointPatterns: WFX
+         username: orionmiddleware_sec
+         secret: 08f91989391a4eabb4a3af964d58765a
+         scopes: wfa:workforce     
+        
+ott:
+  customersite:
+    enterpriseField: customField2
+    childAttributes : SITE,ECPM_CUSTOMER
+  customerType:
+    enterprise:
+      username: SXhhTnJnYTZyTjVHRFRwenterprise
+      password: VipJOWdOTVcweHpTdyFrcEZSKmFZQUszKjI0emJOenterprise
+      endpoint: https://test3enterprise.officetrack.com/services/webservices.asmx?wsdl
+    midmarket:
+      username: SXhhTnJnYTZyTjVHRFRwmidmarket
+      password: VipJOWdOTVcweHpTdyFrcEZSKmFZQUszKjI0emJOmidmarket
+      endpoint: https://test3midmarket.officetrack.com/services/webservices.asmx?wsdl
+    default:
+      username: SXhhTnJnYTZyTjVHRFRwdefault
+      password: VipJOWdOTVcweHpTdyFrcEZSKmFZQUszKjI0emJOdefault
+      endpoint: https://test3default.officetrack.com/services/webservices.asmx?wsdl
+  attributes: 
+    customField1: data1
+    customField2: data2
+    customField3: data3
+    customField4: data4
+    customField5: data5
+    customField6: data6
+    customField7: data7
+    customField8: data8
+    customField9: data9
+    customField10: data10
+    customField11: data11
+    customField12: data12
+    customField13: data13
+    customField14: data14
+    customField15: data15
+    customField16: data16
+    customField17: data17
+    customField18: data18
+    customField19: data19
+    customField20: data20
+    customField21: data21
+    customField22: data22
+    customField23: data23
+    customField24: data24
+    customField25: data25
+    customField26: data26
+    customField27: data27
+    customField28: data28
+    customField29: data29
+    customField30: data30
+    customField31: data31
+    customField32: data32
+    customField33: data33
+    customField34: data34
+    customField35: data35
+    customField36: data36
+    customField37: data37
+    customField38: data38
+    customField39: data39
+    customField40: data40
+
+jobTypeCode:
+  list: EY,M5,0X,V7
+
+site:
+  locationIdentifierInfo: locationIdentifierInfo
+  Info: billingDetailsInfo,marketInfo
+  all: billingDetailsInfo,marketInfo,locationIdentifierInfo
+#WFX Work Order Service endpoints
+workorder: 
+  wfx:
+    isEnabled: true 
+    oauth: 
+      server:
+        url: https://access1_0-qa.g4.app.cloud.comcast.net
+    createworkorder.url: https://order1_3-qa.g4.app.cloud.comcast.net/OMS/workorders/
+    updateworkorder.url: https://order1_3-qa.g1.app.cloud.comcast.net/OMS/workorders/
+    nCreateworkorder.url: https://order1_6-qa.g4.app.cloud.comcast.net/WFX/workorders/
+    nUpdateworkorder.url: https://order1_6-qa.g4.app.cloud.comcast.net/WFX/workorders/
+    #getworkorder.url: https://order1_2-qa.g1.app.cloud.comcast.net/workorders/
+    getworkorder.url: https://order1_2-qa.g4.app.cloud.comcast.net/workorders/
+    #getworkorder.url: http://orionlogst-qc-ld.ula.comcast.net:9023/getWFXWorkorder
+    #getWorkorderBySiteId.url: https://order1_4-qa.g4.app.cloud.comcast.net/workorderByAccNum
+    getWorkorderBySiteId.url: https://order1_5-qa.g4.app.cloud.comcast.net/workorderByAccNum
+    getWorkorderBySiteId.OrderMgtSystem: ORION
+    Authorization: V0dXLU9yaW9uVjBkWExVOXlhVzl1
+    Source: WGW-Orion
+  solutionType: ETHERNET,PRI,SIP,BVE-COAX/BVE-OTT,BVE-FIBER,BI
+  transportType: Coax,OTT,Fiber
+  orderType: TC,SRO,Change,Disconnect,New
+#Location Service endpoints
+  orion: 
+    location: 
+      #url: https://orion-gateway-trn.u1.app.cloud.comcast.net/location/v1/locationinfo
+      url: https://orion-gateway-int.u1.app.cloud.comcast.net/location/v3/details
+      clientid: b3Jpb25fZGV2
+      credentials: c02af9ff99dc45019fcba878fc90cb10
+      granttype: client_credentials
+      scope: orion:orion-dev
+omw:
+  site:
+    getdetail: https://orion-gateway-qa.u1.app.cloud.comcast.net/site/v1/{siteId}
+    #getdetail: https://orion-gateway-int.u1.app.cloud.comcast.net/site/v1/{siteId}
+  referencedata:
+    endpoint: https://orion-gateway-qa.u1.app.cloud.comcast.net
+    path: /referencedata/v1/templatename/{referencetemplatename}/values
+    serviceDiscovery: false
+    serviceName: REFERENCEDATA-SERVICE
+    templateName: JobReasonCodes
+  account:
+    customer:
+      endpoint: https://orion-gateway-trn.u1.app.cloud.comcast.net/account/v3/customer/
+      source: ODS
+
+sqo:
+  lobMap:
+    '[EDI]': 'Ethernet'
+    '[EPL]': 'Ethernet'
+    '[EVPL]': 'Ethernet'
+    '[ENS]': 'Ethernet'
+    '[BI]': 'Business Internet'
+    '[BV]': 'BV'
+    '[PRI]': 'PRI'
+    '[SIP]': 'SIP'
+    '[BVE]': 'BVE'
+    '[Managed Router]': 'Managed Router'
+    '[SD-WAN]': 'SD-WAN'
+  productLobMap:
+    '[BI]': 'I'
+  scheduleWo:
+    orderManagementSystem: ORION
+    jobNumPrefix:
+    defaultJobClassCode: C
+    defaultDispatcherStatusCode: O
+    serviceTypeAction: change
+
+onp:
+  endpoint: http://onp-qa.u1.app.cloud.comcast.net
+  path: /onp/v1/sendNotification
+  insertWOEventName: INSERT_WO_DETAILS
+  source: SQO
+
+
+data:
+  serviceName: DATA-SERVICE
+  endpoint: https://data-trn.u1.app.cloud.comcast.net/
+  serviceDiscovery: false
+  getOrderSummary: data/v1/getOrderSummaryByCustomerId
+  fwaType: AGREEMENT
+  isDelta: false
+schedulesite: true
+schedule:
+  orion:
+    BookAmpt:
+      url : http://orion-gateway-qa.u1.app.cloud.comcast.net/schedule/v1/bookAppointment
+    UpdateAmpt:
+      url: http://orion-gateway-dev.u1.app.cloud.comcast.net:80/schedule/v1/appointmesnt/{appointmentId}
+    cancelampt:
+      url : http://orion-gateway-dev.u1.app.cloud.comcast.net:80/schedule/v1/cancelAppointment
+update:
+  workorder:
+    url: http://orion-gateway-qa.u1.app.cloud.comcast.net/workorder/v2/updateworkorder/{ordernumber}
+    
+ods:
+  customer:
+    endpoint: http://omw1-wc-02p.cable.comcast.com:9080/accountService_V3_getCustomer/ods/{customerId}
+    source: 3
+    serviceType: BI
+  displayServiceType: 
+    CNCV: BI-ManagedConnectivity
+  odsCustomerType:
+    Mid-Market: Midmarket
+  serviceType:
+    SD-WAN: SDWAN_Management
+
+saveNotes:
+  endpoint: https://orion-gateway-int.u1.app.cloud.comcast.net/notes/v1/save
+  jobComments: Technician Note
+  retryLimit: 1 
+  source: ORION  
+orderType:
+  toIgnoreTransportType: TC,SRO
+  toAllowJobReasonCodeType: TC,SRO 
+sitev2:
+#  endpoint: https://orion-gateway-qa.u1.app.cloud.comcast.net/site/v2/{siteId}
+  endpoint: https://orion-gateway-trn.u1.app.cloud.comcast.net/site/v2/{siteId}
+  info: billingDetailsInfo,marketInfo,locationIdentifierInfo,timezoneInfo
+  source: Amdocs
+createworkorder: 
+  allowtolocationcall: false  
+retrytemplate:
+  siteRetryBackOffPeriod: 2000
+  siteRetryMaxAttempts: 3  
+omwauditlogging:
+  rabbitMq:
+    exchangeName: workorderv2-service.header.exchange
+    serviceInstanceId: OMW-RabbitMQ   
+######################################################################################################
+# Hystrix Properties
+######################################################################################################      
+hystrix: 
+  command: 
+    default: 
+      circuitBreaker: 
+        enabled: true
+        errorThresholdPercentage: 55
+        forceClosed: false
+        forceOpen: false
+        requestVolumeThreshold: 5
+        sleepWindowInMilliseconds: 100
+      execution: 
+        isolation: 
+          semaphore: 
+            maxConcurrentRequests: 100
+          thread: 
+            interruptOnCancel: false
+            interruptOnTimeout: 1000
+            timeoutInMilliseconds: 30000
+      fallback: 
+        enabled: true
+        isolation: 
+          semaphore: 
+            maxConcurrentRequests: 100
+        timeout: 
+          enabled: true
+      metrics: 
+        healthSnapshot: 
+          intervalInMilliseconds: 500
+        rollingPercentile: 
+          bucketSize: 100
+          enabled: true
+          numBuckets: 6
+          timeInMilliseconds: 60000
+        rollingStats: 
+          numBuckets: 10
+          timeInMilliseconds: 10000
+      requestCache: 
+        enabled: false
+      requestLog: 
+        enabled: false
+    woAuthHystrix: 
+      circuitBreaker: 
+        errorThresholdPercentage: 55
+        requestVolumeThreshold: 5
+        sleepWindowInMilliseconds: 10000
+      execution: 
+        isolation:
+          thread: 
+            timeoutInMilliseconds: 30000
+      metrics: 
+        healthSnapshot: 
+          intervalInMilliseconds: 500
+        rollingPercentile: 
+          bucketSize: 100
+          enabled: true
+          numBuckets: 6
+          timeInMilliseconds: 60000
+        rollingStats: 
+          numBuckets: 10
+          timeInMilliseconds: 10000
+      requestCache: 
+        enabled: false
+      requestLog: 
+        enabled: false
+    createWOHystrix: 
+      circuitBreaker: 
+        errorThresholdPercentage: 55
+        requestVolumeThreshold: 5
+        sleepWindowInMilliseconds: 10000
+      execution: 
+        isolation:
+          thread: 
+            timeoutInMilliseconds: 30000
+      metrics: 
+        healthSnapshot: 
+          intervalInMilliseconds: 500
+        rollingPercentile: 
+          bucketSize: 100
+          enabled: true
+          numBuckets: 6
+          timeInMilliseconds: 60000
+        rollingStats: 
+          numBuckets: 10
+          timeInMilliseconds: 10000
+      requestCache: 
+        enabled: false
+      requestLog: 
+        enabled: false
+    locationReqHystrix: 
+      circuitBreaker: 
+        errorThresholdPercentage: 55
+        requestVolumeThreshold: 5
+        sleepWindowInMilliseconds: 10000
+      execution: 
+        isolation:
+          thread: 
+            timeoutInMilliseconds: 30000
+      metrics: 
+        healthSnapshot: 
+          intervalInMilliseconds: 500
+        rollingPercentile: 
+          bucketSize: 100
+          enabled: true
+          numBuckets: 6
+          timeInMilliseconds: 60000
+        rollingStats: 
+          numBuckets: 10
+          timeInMilliseconds: 10000
+      requestCache: 
+        enabled: false
+      requestLog: 
+        enabled: false
+    updateWOHystrix: 
+      circuitBreaker: 
+        errorThresholdPercentage: 55
+        requestVolumeThreshold: 5
+        sleepWindowInMilliseconds: 10000
+      execution: 
+        isolation:
+          thread: 
+            timeoutInMilliseconds: 30000
+      metrics: 
+        healthSnapshot: 
+          intervalInMilliseconds: 500
+        rollingPercentile: 
+          bucketSize: 100
+          enabled: true
+          numBuckets: 6
+          timeInMilliseconds: 60000
+        rollingStats: 
+          numBuckets: 10
+          timeInMilliseconds: 10000
+      requestCache: 
+        enabled: false
+      requestLog: 
+        enabled: false  
+    bookAppointmentHystrix: 
+      circuitBreaker: 
+        errorThresholdPercentage: 55
+        requestVolumeThreshold: 5
+        sleepWindowInMilliseconds: 60000
+      execution: 
+        isolation:
+          thread: 
+            timeoutInMilliseconds: 60000
+      metrics: 
+        healthSnapshot: 
+          intervalInMilliseconds: 500
+        rollingPercentile: 
+          bucketSize: 100
+          enabled: true
+          numBuckets: 6
+          timeInMilliseconds: 60000
+        rollingStats: 
+          numBuckets: 10
+          timeInMilliseconds: 10000
+      requestCache: 
+        enabled: false
+      requestLog: 
+        enabled: false   
+    siteHystrix: 
+      circuitBreaker: 
+        errorThresholdPercentage: 55
+        requestVolumeThreshold: 5
+        sleepWindowInMilliseconds: 60000
+      execution: 
+        isolation:
+          thread: 
+            timeoutInMilliseconds: 60000
+      metrics: 
+        healthSnapshot: 
+          intervalInMilliseconds: 500
+        rollingPercentile: 
+          bucketSize: 100
+          enabled: true
+          numBuckets: 6
+          timeInMilliseconds: 60000
+        rollingStats: 
+          numBuckets: 10
+          timeInMilliseconds: 10000
+      requestCache: 
+        enabled: false
+      requestLog: 
+        enabled: false
+    cancelAppointmentHystrix: 
+      circuitBreaker: 
+        errorThresholdPercentage: 55
+        requestVolumeThreshold: 5
+        sleepWindowInMilliseconds: 10000
+      execution: 
+        isolation:
+          thread: 
+            timeoutInMilliseconds: 30000
+      metrics: 
+        healthSnapshot: 
+          intervalInMilliseconds: 500
+        rollingPercentile: 
+          bucketSize: 100
+          enabled: true
+          numBuckets: 6
+          timeInMilliseconds: 60000
+        rollingStats: 
+          numBuckets: 10
+          timeInMilliseconds: 10000
+      requestCache: 
+        enabled: false
+      requestLog: 
+        enabled: false
+    cancelWorkOrderHystrix: 
+      circuitBreaker: 
+        errorThresholdPercentage: 55
+        requestVolumeThreshold: 5
+        sleepWindowInMilliseconds: 10000
+      execution: 
+        isolation:
+          thread: 
+            timeoutInMilliseconds: 30000
+      metrics: 
+        healthSnapshot: 
+          intervalInMilliseconds: 500
+        rollingPercentile: 
+          bucketSize: 100
+          enabled: true
+          numBuckets: 6
+          timeInMilliseconds: 60000
+        rollingStats: 
+          numBuckets: 10
+          timeInMilliseconds: 10000
+      requestCache: 
+        enabled: false
+      requestLog: 
+        enabled: false 
+    saveNotesHystrix: 
+      circuitBreaker: 
+        errorThresholdPercentage: 55
+        requestVolumeThreshold: 5
+        sleepWindowInMilliseconds: 10000
+      execution: 
+        isolation:
+          thread: 
+            timeoutInMilliseconds: 30000
+      metrics: 
+        healthSnapshot: 
+          intervalInMilliseconds: 500
+        rollingPercentile: 
+          bucketSize: 100
+          enabled: true
+          numBuckets: 6
+          timeInMilliseconds: 60000
+        rollingStats: 
+          numBuckets: 10
+          timeInMilliseconds: 10000
+      requestCache: 
+        enabled: false
+      requestLog: 
+        enabled: false
+    serviceDetailsHystrix: 
+      circuitBreaker: 
+        errorThresholdPercentage: 55
+        requestVolumeThreshold: 5
+        sleepWindowInMilliseconds: 10000
+      execution: 
+        isolation:
+          thread: 
+            timeoutInMilliseconds: 30000
+      metrics: 
+        healthSnapshot: 
+          intervalInMilliseconds: 500
+        rollingPercentile: 
+          bucketSize: 100
+          enabled: true
+          numBuckets: 6
+          timeInMilliseconds: 60000
+        rollingStats: 
+          numBuckets: 10
+          timeInMilliseconds: 10000
+      requestCache: 
+        enabled: false
+      requestLog: 
+        enabled: false                            
+    odsDetailsHystrix: 
+      circuitBreaker: 
+        errorThresholdPercentage: 55
+        requestVolumeThreshold: 5
+        sleepWindowInMilliseconds: 10000
+      execution: 
+        isolation:
+          thread: 
+            timeoutInMilliseconds: 30000
+      metrics: 
+        healthSnapshot: 
+          intervalInMilliseconds: 500
+        rollingPercentile: 
+          bucketSize: 100
+          enabled: true
+          numBuckets: 6
+          timeInMilliseconds: 60000
+        rollingStats: 
+          numBuckets: 10
+          timeInMilliseconds: 10000
+      requestCache: 
+        enabled: false
+      requestLog: 
+        enabled: false
+    ottCustomersiteHystrix: 
+      circuitBreaker: 
+        errorThresholdPercentage: 55
+        requestVolumeThreshold: 5
+        sleepWindowInMilliseconds: 100
+      execution: 
+        isolation:
+          thread: 
+            timeoutInMilliseconds: 30000
+      metrics: 
+        healthSnapshot: 
+          intervalInMilliseconds: 500
+        rollingPercentile: 
+          bucketSize: 100
+          enabled: true
+          numBuckets: 6
+          timeInMilliseconds: 60000
+        rollingStats: 
+          numBuckets: 10
+          timeInMilliseconds: 10000
+      requestCache: 
+        enabled: false
+      requestLog: 
+        enabled: false
+    vmsTnFeaturesHystrix:
+      circuitBreaker: 
+        errorThresholdPercentage: 55
+        requestVolumeThreshold: 5
+        sleepWindowInMilliseconds: 10000
+      execution: 
+        isolation:
+          thread: 
+            timeoutInMilliseconds: 30000
+      metrics: 
+        healthSnapshot: 
+          intervalInMilliseconds: 500
+        rollingPercentile: 
+          bucketSize: 100
+          enabled: true
+          numBuckets: 6
+          timeInMilliseconds: 60000
+        rollingStats: 
+          numBuckets: 10
+          timeInMilliseconds: 10000
+      requestCache: 
+        enabled: false
+      requestLog: 
+        enabled: false
+    deletePointOfInterestHystrix:
+      circuitBreaker: 
+        errorThresholdPercentage: 55
+        requestVolumeThreshold: 5
+        sleepWindowInMilliseconds: 10000
+      execution: 
+        isolation:
+          thread: 
+            timeoutInMilliseconds: 30000
+      metrics: 
+        healthSnapshot: 
+          intervalInMilliseconds: 500
+        rollingPercentile: 
+          bucketSize: 100
+          enabled: true
+          numBuckets: 6
+          timeInMilliseconds: 60000
+        rollingStats: 
+          numBuckets: 10
+          timeInMilliseconds: 10000
+      requestCache: 
+        enabled: false
+      requestLog: 
+        enabled: false
+  threadpool: 
+    woAuthHystrix: 
+      allowMaximumSizeToDivergeFromCoreSize: false
+      coreSize: 10
+      keepAliveTimeMinutes: 1
+      maxQueueSize: -1
+      maximumSize: 10
+      queueSizeRejectionThreshold: 5 
+    createWOHystrix: 
+      allowMaximumSizeToDivergeFromCoreSize: false
+      coreSize: 10
+      keepAliveTimeMinutes: 1
+      maxQueueSize: -1
+      maximumSize: 10
+      queueSizeRejectionThreshold: 5 
+    locationReqHystrix: 
+      allowMaximumSizeToDivergeFromCoreSize: false
+      coreSize: 10
+      keepAliveTimeMinutes: 1
+      maxQueueSize: -1
+      maximumSize: 10
+      queueSizeRejectionThreshold: 5 
+    updateWOHystrix: 
+      allowMaximumSizeToDivergeFromCoreSize: false
+      coreSize: 10
+      keepAliveTimeMinutes: 1
+      maxQueueSize: -1
+      maximumSize: 10
+      queueSizeRejectionThreshold: 5
+    bookAppointmentHystrix:
+      allowMaximumSizeToDivergeFromCoreSize: false
+      coreSize: 10
+      keepAliveTimeMinutes: 1
+      maxQueueSize: -1
+      maximumSize: 10
+      queueSizeRejectionThreshold: 5
+    siteHystrix:
+      allowMaximumSizeToDivergeFromCoreSize: false
+      coreSize: 10
+      keepAliveTimeMinutes: 1
+      maxQueueSize: -1
+      maximumSize: 10
+      queueSizeRejectionThreshold: 5
+    cancelAppointmentHystrix:
+      allowMaximumSizeToDivergeFromCoreSize: false
+      coreSize: 10
+      keepAliveTimeMinutes: 1
+      maxQueueSize: -1
+      maximumSize: 10
+      queueSizeRejectionThreshold: 5
+    cancelWorkOrderHystrix:
+      allowMaximumSizeToDivergeFromCoreSize: false
+      coreSize: 10
+      keepAliveTimeMinutes: 1
+      maxQueueSize: -1
+      maximumSize: 10
+      queueSizeRejectionThreshold: 5    
+    saveNotesHystrix:
+      allowMaximumSizeToDivergeFromCoreSize: false
+      coreSize: 10
+      keepAliveTimeMinutes: 1
+      maxQueueSize: -1
+      maximumSize: 10
+      queueSizeRejectionThreshold: 5
+    serviceDetailsHystrix:
+      allowMaximumSizeToDivergeFromCoreSize: false
+      coreSize: 10
+      keepAliveTimeMinutes: 1
+      maxQueueSize: -1
+      maximumSize: 10
+      queueSizeRejectionThreshold: 5         
+    odsDetailsHystrix:
+      allowMaximumSizeToDivergeFromCoreSize: false
+      coreSize: 10
+      keepAliveTimeMinutes: 1
+      maxQueueSize: -1
+      maximumSize: 50
+      queueSizeRejectionThreshold: 5
+    ottCustomersiteHystrix: 
+      allowMaximumSizeToDivergeFromCoreSize: true
+      coreSize: 10
+      keepAliveTimeMinutes: 1
+      maxQueueSize: -1
+      maximumSize: 50
+      queueSizeRejectionThreshold: 5
+    vmsTnFeaturesHystrix:
+      allowMaximumSizeToDivergeFromCoreSize: false
+      coreSize: 10
+      keepAliveTimeMinutes: 1
+      maxQueueSize: -1
+      maximumSize: 50
+      queueSizeRejectionThreshold: 5
+    deletePointOfInterestHystrix:
+      allowMaximumSizeToDivergeFromCoreSize: false
+      coreSize: 10
+      keepAliveTimeMinutes: 1
+      maxQueueSize: -1
+      maximumSize: 50
+      queueSizeRejectionThreshold: 5
+    accountHystrix:
+      allowMaximumSizeToDivergeFromCoreSize: false
+      coreSize: 10
+      keepAliveTimeMinutes: 1
+      maxQueueSize: -1
+      maximumSize: 50
+      queueSizeRejectionThreshold: 5
+      
+integration:
+  threadPoolTaskExecutor:
+   corePoolSize: 10
+   maxPoolSize: 50
+   waitForJobsToCompleteOnShutdown: true
+  messageGroupStoreReaper:
+   timeout: 60000
+
+
+officetrack:
+  pointofdelete:   
+    endpoint: https://test3.officetrack.com/services/webservices.asmx
+    username: j7szFmkRfnzrsvw
+    password: lab2V0~h4J~9B27e*p3RwsB4Wf4G*n
+    connectiontimeout: 30000
+    receivetimeout: 30000
+        
+wfxjobcomments:
+  contact: "Contact: "
+  concat: "|"
+  maxLength: 4000

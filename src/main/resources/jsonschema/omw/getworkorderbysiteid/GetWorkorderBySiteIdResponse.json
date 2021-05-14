@@ -1,0 +1,1138 @@
+{
+  "definitions": {
+    
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "array",
+  "items": {
+    "$id": "#/items",
+    "type": "object",
+    "properties": {
+      "solutionDetails": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "solutionType": {
+              "type": "string",
+              "example": "ETHERNET"
+            },
+            "orderType": {
+              "type": "string",
+              "example": "TC"
+            },
+            "transportType": {
+              "type": "string",
+              "example": "Coax"
+            }
+          }
+        }
+      },
+      "JobCustomer": {
+        "$id": "#/items/properties/JobCustomer",
+        "type": "object",
+        "properties": {
+          "DelinquencyStatusCd": {
+            "$id": "#/items/properties/JobCustomer/properties/DelinquencyStatusCd",
+            "type": "null",
+            "examples": [
+              null
+            ]
+          },
+          "CustomerCustomFields": {
+            "$id": "#/items/properties/JobCustomer/properties/CustomerCustomFields",
+            "type": "object",
+            "properties": {
+              "CustomerCustom1": {
+                "$id": "#/items/properties/JobCustomer/properties/CustomerCustomFields/properties/CustomerCustom1",
+                "type": "null",
+                "examples": [
+                  null
+                ]
+              },
+              "CustomerCustom3": {
+                "$id": "#/items/properties/JobCustomer/properties/CustomerCustomFields/properties/CustomerCustom3",
+                "type": "null",
+                "examples": [
+                  null
+                ]
+              },
+              "CustomerCustom4": {
+                "$id": "#/items/properties/JobCustomer/properties/CustomerCustomFields/properties/CustomerCustom4",
+                "type": "string",
+                "examples": [
+                  "N"
+                ]
+              },
+              "CustomerCustom2": {
+                "$id": "#/items/properties/JobCustomer/properties/CustomerCustomFields/properties/CustomerCustom2",
+                "type": "null",
+                "examples": [
+                  null
+                ]
+              },
+              "CustomerCustom7": {
+                "$id": "#/items/properties/JobCustomer/properties/CustomerCustomFields/properties/CustomerCustom7",
+                "type": "null",
+                "examples": [
+                  null
+                ]
+              },
+              "CustomerCustom6": {
+                "$id": "#/items/properties/JobCustomer/properties/CustomerCustomFields/properties/CustomerCustom6",
+                "type": "null",
+                "examples": [
+                  null
+                ]
+              },
+              "CustomerCustom12": {
+                "$id": "#/items/properties/JobCustomer/properties/CustomerCustomFields/properties/CustomerCustom12",
+                "type": "null",
+                "examples": [
+                  null
+                ]
+              },
+              "CustomerCustom11": {
+                "$id": "#/items/properties/JobCustomer/properties/CustomerCustomFields/properties/CustomerCustom11",
+                "type": "null",
+                "examples": [
+                  null
+                ]
+              },
+              "CustomerCustom5": {
+                "$id": "#/items/properties/JobCustomer/properties/CustomerCustomFields/properties/CustomerCustom5",
+                "type": "null",
+                "examples": [
+                  null
+                ]
+              },
+              "CustomerCustom10": {
+                "$id": "#/items/properties/JobCustomer/properties/CustomerCustomFields/properties/CustomerCustom10",
+                "type": "null",
+                "examples": [
+                  null
+                ]
+              },
+              "CustomerCustom9": {
+                "$id": "#/items/properties/JobCustomer/properties/CustomerCustomFields/properties/CustomerCustom9",
+                "type": "null",
+                "examples": [
+                  null
+                ]
+              },
+              "CustomerCustom8": {
+                "$id": "#/items/properties/JobCustomer/properties/CustomerCustomFields/properties/CustomerCustom8",
+                "type": "null",
+                "examples": [
+                  null
+                ]
+              }
+            }
+          },
+          "AccountNum": {
+            "$id": "#/items/properties/JobCustomer/properties/AccountNum",
+            "type": "string",
+            "examples": [
+              "8210100200471420"
+            ]
+          },
+          "EmailAddr": {
+            "$id": "#/items/properties/JobCustomer/properties/EmailAddr",
+            "type": "string",
+            "examples": [
+              "aggiebeans@yahoo.com"
+            ]
+          },
+          "VipCd": {
+            "$id": "#/items/properties/JobCustomer/properties/VipCd",
+            "type": "null",
+            "examples": [
+              null
+            ]
+          },
+          "WorkPhoneNum": {
+            "$id": "#/items/properties/JobCustomer/properties/WorkPhoneNum",
+            "type": "null",
+            "examples": [
+              null
+            ]
+          },
+          "CustMisc": {
+            "$id": "#/items/properties/JobCustomer/properties/CustMisc",
+            "type": "null",
+            "examples": [
+              null
+            ]
+          },
+          "CurrentBalance": {
+            "$id": "#/items/properties/JobCustomer/properties/CurrentBalance",
+            "type": "string",
+            "examples": [
+              "41.40"
+            ]
+          },
+          "FirstName": {
+            "$id": "#/items/properties/JobCustomer/properties/FirstName",
+            "type": "string",
+            "examples": [
+              "TN"
+            ]
+          },
+          "HomePhoneNum": {
+            "$id": "#/items/properties/JobCustomer/properties/HomePhoneNum",
+            "type": "string",
+            "examples": [
+              "1234567890"
+            ]
+          },
+          "BillingAddress": {
+            "$id": "#/items/properties/JobCustomer/properties/BillingAddress",
+            "type": "object",
+            "required": [
+              "ZipCode",
+              "AddrLine2",
+              "City",
+              "AddrLine1",
+              "State"
+            ],
+            "properties": {
+              "ZipCode": {
+                "$id": "#/items/properties/JobCustomer/properties/BillingAddress/properties/ZipCode",
+                "type": "string",
+                "examples": [
+                  "801135950"
+                ]
+              },
+              "AddrLine2": {
+                "$id": "#/items/properties/JobCustomer/properties/BillingAddress/properties/AddrLine2",
+                "type": "null",
+                "examples": [
+                  null
+                ]
+              },
+              "City": {
+                "$id": "#/items/properties/JobCustomer/properties/BillingAddress/properties/City",
+                "type": "string",
+                "examples": [
+                  "ENGLEWOOD"
+                ]
+              },
+              "AddrLine1": {
+                "$id": "#/items/properties/JobCustomer/properties/BillingAddress/properties/AddrLine1",
+                "type": "string",
+                "examples": [
+                  "104 DRCSG104900RES RD"
+                ]
+              },
+              "State": {
+                "$id": "#/items/properties/JobCustomer/properties/BillingAddress/properties/State",
+                "type": "string",
+                "examples": [
+                  "CO"
+                ]
+              }
+            }
+          },
+          "RegistrationCd": {
+            "$id": "#/items/properties/JobCustomer/properties/RegistrationCd",
+            "type": "string",
+            "examples": [
+              "200471420"
+            ]
+          },
+          "DelinquentAmount": {
+            "$id": "#/items/properties/JobCustomer/properties/DelinquentAmount",
+            "type": "string",
+            "examples": [
+              "20.7"
+            ]
+          },
+          "LanguageCd": {
+            "$id": "#/items/properties/JobCustomer/properties/LanguageCd",
+            "type": "string",
+            "examples": [
+              "ENG"
+            ]
+          },
+          "LastName": {
+            "$id": "#/items/properties/JobCustomer/properties/LastName",
+            "type": "string",
+            "examples": [
+              "TEST"
+            ]
+          },
+          "NumDayDelinquent": {
+            "$id": "#/items/properties/JobCustomer/properties/NumDayDelinquent",
+            "type": "string",
+            "examples": [
+              "38"
+            ]
+          },
+          "CustomerId": {
+            "$id": "#/items/properties/JobCustomer/properties/CustomerId",
+            "type": "string",
+            "examples": [
+              "1101515639099"
+            ]
+          }
+        }
+      },
+      "JobLocation": {
+        "$id": "#/items/properties/JobLocation",
+        "type": "object",
+        "properties": {
+          "ManagementArea": {
+            "$id": "#/items/properties/JobLocation/properties/ManagementArea",
+            "type": "string",
+            "examples": [
+              "4C"
+            ]
+          },
+          "HeadendCd": {
+            "$id": "#/items/properties/JobLocation/properties/HeadendCd",
+            "type": "string",
+            "examples": [
+              "18"
+            ]
+          },
+          "HookupType": {
+            "$id": "#/items/properties/JobLocation/properties/HookupType",
+            "type": "string",
+            "examples": [
+              "H"
+            ]
+          },
+          "DropLocationType": {
+            "$id": "#/items/properties/JobLocation/properties/DropLocationType",
+            "type": "null",
+            "examples": [
+              null
+            ]
+          },
+          "Amplifier": {
+            "$id": "#/items/properties/JobLocation/properties/Amplifier",
+            "type": "null",
+            "examples": [
+              null
+            ]
+          },
+          "RouteCriteria": {
+            "$id": "#/items/properties/JobLocation/properties/RouteCriteria",
+            "type": "string",
+            "examples": [
+              "4C"
+            ]
+          },
+          "DropLocationCd": {
+            "$id": "#/items/properties/JobLocation/properties/DropLocationCd",
+            "type": "string",
+            "examples": [
+              "A"
+            ]
+          },
+          "BldgTypeCd": {
+            "$id": "#/items/properties/JobLocation/properties/BldgTypeCd",
+            "type": "string",
+            "examples": [
+              "AA"
+            ]
+          },
+          "LocationCustomFields": {
+            "$id": "#/items/properties/JobLocation/properties/LocationCustomFields",
+            "type": "object",
+            "properties": {
+              "LocationCustom5": {
+                "$id": "#/items/properties/JobLocation/properties/LocationCustomFields/properties/LocationCustom5",
+                "type": "null",
+                "examples": [
+                  null
+                ]
+              },
+              "LocationCustom10": {
+                "$id": "#/items/properties/JobLocation/properties/LocationCustomFields/properties/LocationCustom10",
+                "type": "null",
+                "examples": [
+                  null
+                ]
+              },
+              "LocationCustom9": {
+                "$id": "#/items/properties/JobLocation/properties/LocationCustomFields/properties/LocationCustom9",
+                "type": "null",
+                "examples": [
+                  null
+                ]
+              },
+              "LocationCustom11": {
+                "$id": "#/items/properties/JobLocation/properties/LocationCustomFields/properties/LocationCustom11",
+                "type": "null",
+                "examples": [
+                  null
+                ]
+              },
+              "LocationCustom12": {
+                "$id": "#/items/properties/JobLocation/properties/LocationCustomFields/properties/LocationCustom12",
+                "type": "null",
+                "examples": [
+                  null
+                ]
+              },
+              "LocationCustom6": {
+                "$id": "#/items/properties/JobLocation/properties/LocationCustomFields/properties/LocationCustom6",
+                "type": "null",
+                "examples": [
+                  null
+                ]
+              },
+              "LocationCustom2": {
+                "$id": "#/items/properties/JobLocation/properties/LocationCustomFields/properties/LocationCustom2",
+                "type": "null",
+                "examples": [
+                  null
+                ]
+              },
+              "LocationCustom7": {
+                "$id": "#/items/properties/JobLocation/properties/LocationCustomFields/properties/LocationCustom7",
+                "type": "null",
+                "examples": [
+                  null
+                ]
+              },
+              "LocationCustom4": {
+                "$id": "#/items/properties/JobLocation/properties/LocationCustomFields/properties/LocationCustom4",
+                "type": "null",
+                "examples": [
+                  null
+                ]
+              },
+              "LocationCustom1": {
+                "$id": "#/items/properties/JobLocation/properties/LocationCustomFields/properties/LocationCustom1",
+                "type": "null",
+                "examples": [
+                  null
+                ]
+              },
+              "LocationCustom8": {
+                "$id": "#/items/properties/JobLocation/properties/LocationCustomFields/properties/LocationCustom8",
+                "type": "null",
+                "examples": [
+                  null
+                ]
+              },
+              "LocationCustom3": {
+                "$id": "#/items/properties/JobLocation/properties/LocationCustomFields/properties/LocationCustom3",
+                "type": "null",
+                "examples": [
+                  null
+                ]
+              }
+            }
+          },
+          "CensusCd": {
+            "$id": "#/items/properties/JobLocation/properties/CensusCd",
+            "type": "string",
+            "examples": [
+              "407802"
+            ]
+          },
+          "Node": {
+            "$id": "#/items/properties/JobLocation/properties/Node",
+            "type": "string",
+            "examples": [
+              "PPTC02"
+            ]
+          },
+          "AddrId": {
+            "$id": "#/items/properties/JobLocation/properties/AddrId",
+            "type": "string",
+            "examples": [
+              "80113595089842"
+            ]
+          },
+          "LocationDropTags": {
+            "$id": "#/items/properties/JobLocation/properties/LocationDropTags",
+            "type": "object",
+            "required": [
+              "DropTag1",
+              "DropTag2",
+              "DropTag3"
+            ],
+            "properties": {
+              "DropTag1": {
+                "$id": "#/items/properties/JobLocation/properties/LocationDropTags/properties/DropTag1",
+                "type": "null",
+                "examples": [
+                  null
+                ]
+              },
+              "DropTag2": {
+                "$id": "#/items/properties/JobLocation/properties/LocationDropTags/properties/DropTag2",
+                "type": "null",
+                "examples": [
+                  null
+                ]
+              },
+              "DropTag3": {
+                "$id": "#/items/properties/JobLocation/properties/LocationDropTags/properties/DropTag3",
+                "type": "null",
+                "examples": [
+                  null
+                ]
+              }
+            }
+          },
+          "HouseMisc": {
+            "$id": "#/items/properties/JobLocation/properties/HouseMisc",
+            "type": "null",
+            "examples": [
+              null
+            ]
+          },
+          "PoleNum": {
+            "$id": "#/items/properties/JobLocation/properties/PoleNum",
+            "type": "string",
+            "examples": [
+              "PPTC02"
+            ]
+          },
+          "ServiceArea": {
+            "$id": "#/items/properties/JobLocation/properties/ServiceArea",
+            "type": "null",
+            "examples": [
+              null
+            ]
+          },
+          "HouseStatus": {
+            "$id": "#/items/properties/JobLocation/properties/HouseStatus",
+            "type": "string",
+            "examples": [
+              "S"
+            ]
+          },
+          "PowerSupply": {
+            "$id": "#/items/properties/JobLocation/properties/PowerSupply",
+            "type": "null",
+            "examples": [
+              null
+            ]
+          },
+          "Address": {
+            "$id": "#/items/properties/JobLocation/properties/Address",
+            "type": "object",
+            "properties": {
+              "ZipCode": {
+                "$id": "#/items/properties/JobLocation/properties/Address/properties/ZipCode",
+                "type": "string",
+                "examples": [
+                  "801135950"
+                ]
+              },
+              "AddrId": {
+                "$id": "#/items/properties/JobLocation/properties/AddrId",
+                "type": "string",
+                "examples": [
+                  "80113595089842"
+                ]
+              },
+              "AddrLine2": {
+                "$id": "#/items/properties/JobLocation/properties/Address/properties/AddrLine2",
+                "type": "null",
+                "examples": [
+                  null
+                ]
+              },
+              "City": {
+                "$id": "#/items/properties/JobLocation/properties/Address/properties/City",
+                "type": "string",
+                "examples": [
+                  "ENGLEWOOD"
+                ]
+              },
+              "AddrLine1": {
+                "$id": "#/items/properties/JobLocation/properties/Address/properties/AddrLine1",
+                "type": "string",
+                "examples": [
+                  "104 DRCSG104900RES RD"
+                ]
+              },
+              "State": {
+                "$id": "#/items/properties/JobLocation/properties/Address/properties/State",
+                "type": "string",
+                "examples": [
+                  "CO"
+                ]
+              }
+            }
+          },
+          "TapStatusCd": {
+            "$id": "#/items/properties/JobLocation/properties/TapStatusCd",
+            "type": "string",
+            "examples": [
+              "1"
+            ]
+          },
+          "MapCode": {
+            "$id": "#/items/properties/JobLocation/properties/MapCode",
+            "type": "null",
+            "examples": [
+              null
+            ]
+          },
+          "BridgerAddress": {
+            "$id": "#/items/properties/JobLocation/properties/BridgerAddress",
+            "type": "string",
+            "examples": [
+              "99999999"
+            ]
+          }
+        }
+      },
+      "Job": {
+        "$id": "#/items/properties/Job",
+        "type": "object",
+        "properties": {
+          "TimeSlotDesc": {
+            "$id": "#/items/properties/Job/properties/TimeSlotDesc",
+            "type": "string",
+            "examples": [
+              "1400-1600"
+            ]
+          },
+          "WorkOrderNum": {
+            "$id": "#/items/properties/Job/properties/WorkOrderNum",
+            "type": "string",
+            "examples": [
+              "11600173705210130001"
+            ]
+          },
+          "CreateDateTime": {
+            "$id": "#/items/properties/Job/properties/CreateDateTime",
+            "type": "string",
+            "examples": [
+              "2015/12/10 00:51:32.000"
+            ]
+          },
+          "OrderMgmtSystem": {
+            "$id": "#/items/properties/Job/properties/OrderMgmtSystem",
+            "type": "string",
+            "examples": [
+              "ACP"
+            ]
+          },
+          "EnRouteRequestInd": {
+            "$id": "#/items/properties/Job/properties/EnRouteRequestInd",
+            "type": "null",
+            "examples": [
+              null
+            ]
+          },
+          "SourceId": {
+            "$id": "#/items/properties/Job/properties/SourceId",
+            "type": "string",
+            "examples": [
+              "WFX"
+            ]
+          },
+          "CallFirstPhoneNum": {
+            "$id": "#/items/properties/Job/properties/CallFirstPhoneNum",
+            "type": "string",
+            "examples": [
+              "1234567890"
+            ]
+          },
+          "TimeSlotCd": {
+            "$id": "#/items/properties/Job/properties/TimeSlotCd",
+            "type": "string",
+            "examples": [
+              "7"
+            ]
+          },
+          "JobUnits": {
+            "$id": "#/items/properties/Job/properties/JobUnits",
+            "type": "string",
+            "examples": [
+              "10"
+            ]
+          },
+          "JobTypeCd": {
+            "$id": "#/items/properties/Job/properties/JobTypeCd",
+            "type": "string",
+            "examples": [
+              "TC"
+            ]
+          },
+          "TimeSlotEndTime": {
+            "$id": "#/items/properties/Job/properties/TimeSlotEndTime",
+            "type": "string",
+            "examples": [
+              "23:00"
+            ]
+          },
+          "bu_id": {
+            "$id": "#/items/properties/Job/properties/bu_id",
+            "type": "string",
+            "examples": [
+              "182101001"
+            ]
+          },
+          "JobResolutionCdList": {
+            "$id": "#/items/properties/Job/properties/JobResolutionCdList",
+            "type": "array"
+          },
+          "DaylightSavingsObserved": {
+            "$id": "#/items/properties/Job/properties/DaylightSavingsObserved",
+            "type": "string",
+            "examples": [
+              "Y"
+            ]
+          },
+          "DispatcherStatusCd": {
+            "$id": "#/items/properties/Job/properties/DispatcherStatusCd",
+            "type": "string",
+            "examples": [
+              "R"
+            ]
+          },
+          "TimeSlotStartTime": {
+            "$id": "#/items/properties/Job/properties/TimeSlotStartTime",
+            "type": "string",
+            "examples": [
+              "21:00"
+            ]
+          },
+          "InitialStartDateTime": {
+            "$id": "#/items/properties/Job/properties/InitialStartDateTime",
+            "type": "null",
+            "examples": [
+              null
+            ]
+          },
+          "ScheduleDate": {
+            "$id": "#/items/properties/Job/properties/ScheduleDate",
+            "type": "string",
+            "examples": [
+              "2016/01/19"
+            ]
+          },
+          "JobNum": {
+            "$id": "#/items/properties/Job/properties/JobNum",
+            "type": "string",
+            "examples": [
+              "162114"
+            ]
+          },
+          "OrderNum": {
+            "$id": "#/items/properties/Job/properties/OrderNum",
+            "type": "string",
+            "examples": [
+              "1160017370521013"
+            ]
+          },
+          "TechnicianNum": {
+            "$id": "#/items/properties/Job/properties/TechnicianNum",
+            "type": "string",
+            "examples": [
+              "0101"
+            ]
+          },
+          "InstallerType": {
+            "$id": "#/items/properties/Job/properties/InstallerType",
+            "type": "string",
+            "examples": [
+              "I"
+            ]
+          },
+          "BusinessUnit": {
+            "$id": "#/items/properties/Job/properties/BusinessUnit",
+            "type": "string",
+            "examples": [
+              "821010000200"
+            ]
+          },
+          "LastChangeOper": {
+            "$id": "#/items/properties/Job/properties/LastChangeOper",
+            "type": "string",
+            "examples": [
+              "dss wfxapcompre1:30251"
+            ]
+          },
+          "SalesmanNum": {
+            "$id": "#/items/properties/Job/properties/SalesmanNum",
+            "type": "string",
+            "examples": [
+              "00000"
+            ]
+          },
+          "JobCommentTypeCdList": {
+            "$id": "#/items/properties/Job/properties/JobCommentTypeCdList",
+            "type": "array",
+            "items": {
+              "$id": "#/items/properties/Job/properties/JobCommentTypeCdList/items",
+              "type": "object",
+              "properties": {
+                "JobCommentTypeCd": {
+                  "$id": "#/items/properties/Job/properties/JobCommentTypeCdList/items/properties/JobCommentTypeCd",
+                  "type": "string",
+                  "examples": [
+                    "Job"
+                  ]
+                },
+                "JobComment": {
+                  "$id": "#/items/properties/Job/properties/JobCommentTypeCdList/items/properties/JobComment",
+                  "type": "string",
+                  "examples": [
+                    "THIS IS A JOB COMMENT"
+                  ]
+                }
+              }
+            }
+          },
+          "OnTimeGuaranteeInd": {
+            "$id": "#/items/properties/Job/properties/OnTimeGuaranteeInd",
+            "type": "null",
+            "examples": [
+              null
+            ]
+          },
+          "CodAmount": {
+            "$id": "#/items/properties/Job/properties/CodAmount",
+            "type": "null",
+            "examples": [
+              null
+            ]
+          },
+          "EndDateTime": {
+            "$id": "#/items/properties/Job/properties/EndDateTime",
+            "type": "null",
+            "examples": [
+              null
+            ]
+          },
+          "TroubleCallIndicator": {
+            "$id": "#/items/properties/Job/properties/TroubleCallIndicator",
+            "type": "string",
+            "examples": [
+              "Q"
+            ]
+          },
+          "JobCustomFields": {
+            "$id": "#/items/properties/Job/properties/JobCustomFields",
+            "type": "object",
+            "properties": {
+              "JobCustom2": {
+                "$id": "#/items/properties/Job/properties/JobCustomFields/properties/JobCustom2",
+                "type": "null",
+                "examples": [
+                  null
+                ]
+              },
+              "JobCustom6": {
+                "$id": "#/items/properties/Job/properties/JobCustomFields/properties/JobCustom6",
+                "type": "null",
+                "examples": [
+                  null
+                ]
+              },
+              "JobCustom10": {
+                "$id": "#/items/properties/Job/properties/JobCustomFields/properties/JobCustom10",
+                "type": "null",
+                "examples": [
+                  null
+                ]
+              },
+              "JobCustom7": {
+                "$id": "#/items/properties/Job/properties/JobCustomFields/properties/JobCustom7",
+                "type": "null",
+                "examples": [
+                  null
+                ]
+              },
+              "JobCustom8": {
+                "$id": "#/items/properties/Job/properties/JobCustomFields/properties/JobCustom8",
+                "type": "null",
+                "examples": [
+                  null
+                ]
+              },
+              "JobCustom5": {
+                "$id": "#/items/properties/Job/properties/JobCustomFields/properties/JobCustom5",
+                "type": "null",
+                "examples": [
+                  null
+                ]
+              },
+              "JobCustom9": {
+                "$id": "#/items/properties/Job/properties/JobCustomFields/properties/JobCustom9",
+                "type": "null",
+                "examples": [
+                  null
+                ]
+              },
+              "JobCustom3": {
+                "$id": "#/items/properties/Job/properties/JobCustomFields/properties/JobCustom3",
+                "type": "null",
+                "examples": [
+                  null
+                ]
+              },
+              "JobCustom12": {
+                "$id": "#/items/properties/Job/properties/JobCustomFields/properties/JobCustom12",
+                "type": "null",
+                "examples": [
+                  null
+                ]
+              },
+              "JobCustom11": {
+                "$id": "#/items/properties/Job/properties/JobCustomFields/properties/JobCustom11",
+                "type": "null",
+                "examples": [
+                  null
+                ]
+              },
+              "JobCustom4": {
+                "$id": "#/items/properties/Job/properties/JobCustomFields/properties/JobCustom4",
+                "type": "null",
+                "examples": [
+                  null
+                ]
+              },
+              "JobCustom1": {
+                "$id": "#/items/properties/Job/properties/JobCustomFields/properties/JobCustom1",
+                "type": "null",
+                "examples": [
+                  null
+                ]
+              }
+            }
+          },
+          "JobReasonCdList": {
+            "$id": "#/items/properties/Job/properties/JobReasonCdList",
+            "type": "array",
+            "items": {
+              "$id": "#/items/properties/Job/properties/JobReasonCdList/items",
+              "type": "object",
+              "properties": {
+                "JobReasonCd": {
+                  "$id": "#/items/properties/Job/properties/JobReasonCdList/items/properties/JobReasonCd",
+                  "type": "string",
+                  "examples": [
+                    "C1"
+                  ]
+                }
+              }
+            }
+          },
+          "TimeZoneOffset": {
+            "$id": "#/items/properties/Job/properties/TimeZoneOffset",
+            "type": "string",
+            "examples": [
+              "480"
+            ]
+          }
+        }
+      },
+      "JobEquipmentList": {
+        "$id": "#/items/properties/JobEquipmentList",
+        "type": "array",
+        "items": {
+          "$id": "#/items/properties/JobEquipmentList/items",
+          "type": "object",
+          "properties": {
+            "AssocDeviceComponent": {
+              "$id": "#/items/properties/JobEquipmentList/items/properties/AssocDeviceComponent",
+              "type": "null",
+              "examples": [
+                null
+              ]
+            },
+            "EquipMake": {
+              "$id": "#/items/properties/JobEquipmentList/items/properties/EquipMake",
+              "type": "null",
+              "examples": [
+                null
+              ]
+            },
+            "AssocDeviceSerialNum": {
+              "$id": "#/items/properties/JobEquipmentList/items/properties/AssocDeviceSerialNum",
+              "type": "null",
+              "examples": [
+                null
+              ]
+            },
+            "SerialNum": {
+              "$id": "#/items/properties/JobEquipmentList/items/properties/SerialNum",
+              "type": "string",
+              "examples": [
+                "*"
+              ]
+            },
+            "SubType": {
+              "$id": "#/items/properties/JobEquipmentList/items/properties/SubType",
+              "type": "null",
+              "examples": [
+                null
+              ]
+            },
+            "UsageReturnPath": {
+              "$id": "#/items/properties/JobEquipmentList/items/properties/UsageReturnPath",
+              "type": "null",
+              "examples": [
+                null
+              ]
+            },
+            "EquipStatusCd": {
+              "$id": "#/items/properties/JobEquipmentList/items/properties/EquipStatusCd",
+              "type": "string",
+              "examples": [
+                "S"
+              ]
+            },
+            "OwnerCd": {
+              "$id": "#/items/properties/JobEquipmentList/items/properties/OwnerCd",
+              "type": "string",
+              "examples": [
+                "N"
+              ]
+            },
+            "HostId": {
+              "$id": "#/items/properties/JobEquipmentList/items/properties/HostId",
+              "type": "null",
+              "examples": [
+                null
+              ]
+            },
+            "AssocDeviceType": {
+              "$id": "#/items/properties/JobEquipmentList/items/properties/AssocDeviceType",
+              "type": "null",
+              "examples": [
+                null
+              ]
+            },
+            "EquipTypeCd": {
+              "$id": "#/items/properties/JobEquipmentList/items/properties/EquipTypeCd",
+              "type": "string",
+              "examples": [
+                "N"
+              ]
+            },
+            "EquipCategoryCd": {
+              "$id": "#/items/properties/JobEquipmentList/items/properties/EquipCategoryCd",
+              "type": "string",
+              "examples": [
+                "01"
+              ]
+            },
+            "DeviceAddress": {
+              "$id": "#/items/properties/JobEquipmentList/items/properties/DeviceAddress",
+              "type": "null",
+              "examples": [
+                null
+              ]
+            },
+            "EquipModelCd": {
+              "$id": "#/items/properties/JobEquipmentList/items/properties/EquipModelCd",
+              "type": "null",
+              "examples": [
+                null
+              ]
+            },
+            "DeviceAddress2": {
+              "$id": "#/items/properties/JobEquipmentList/items/properties/DeviceAddress2",
+              "type": "null",
+              "examples": [
+                null
+              ]
+            },
+            "SecurityDataId": {
+              "$id": "#/items/properties/JobEquipmentList/items/properties/SecurityDataId",
+              "type": "null",
+              "examples": [
+                null
+              ]
+            },
+            "ComponentCd": {
+              "$id": "#/items/properties/JobEquipmentList/items/properties/ComponentCd",
+              "type": "string",
+              "examples": [
+                "01"
+              ]
+            }
+          }
+        }
+      },
+      "JobProductList": {
+        "$id": "#/items/properties/JobProductList",
+        "type": "array",
+        "items": {
+          "$id": "#/items/properties/JobProductList/items",
+          "type": "object",
+          "properties": {
+            "Quantity": {
+              "$id": "#/items/properties/JobProductList/items/properties/Quantity",
+              "type": "string",
+              "examples": [
+                "1"
+              ]
+            },
+            "FulfillmentJobNum": {
+              "$id": "#/items/properties/JobProductList/items/properties/FulfillmentJobNum",
+              "type": "string",
+              "examples": [
+                "000000"
+              ]
+            },
+            "ProductTypeCd": {
+              "$id": "#/items/properties/JobProductList/items/properties/ProductTypeCd",
+              "type": "string",
+              "examples": [
+                "S"
+              ]
+            },
+            "ActionCd": {
+              "$id": "#/items/properties/JobProductList/items/properties/ActionCd",
+              "type": "string",
+              "examples": [
+                "NONE"
+              ]
+            },
+            "ParentProductCd": {
+              "$id": "#/items/properties/JobProductList/items/properties/ParentProductCd",
+              "type": "string",
+              "examples": [
+                "BA"
+              ]
+            },
+            "ProductLOB": {
+              "$id": "#/items/properties/JobProductList/items/properties/ProductLOB",
+              "type": "string",
+              "examples": [
+                "C"
+              ]
+            },
+            "VoipPortNum": {
+              "$id": "#/items/properties/JobProductList/items/properties/VoipPortNum",
+              "type": "null",
+              "examples": [
+                null
+              ]
+            },
+            "VoicePhoneNum": {
+              "$id": "#/items/properties/JobProductList/items/properties/VoicePhoneNum",
+              "type": "null",
+              "examples": [
+                null
+              ]
+            },
+            "AccountNum": {
+              "$id": "#/items/properties/JobProductList/items/properties/AccountNum",
+              "type": "string",
+              "examples": [
+                "8210100200471420"
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

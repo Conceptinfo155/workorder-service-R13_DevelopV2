@@ -1,0 +1,55 @@
+{
+    "responseItems": {
+        "marketHiearchy": [],
+        "marketInfo": {
+            "glCode": "00017x",
+            "legacyMarketInfo": {
+                "CSGMarketInfo": {
+                    "Agent": "4278",
+                    "CSGSystem": "8978",
+                    "Principle": "2000"
+                },
+                "legacyMarketIDSource": "CSG"
+            },
+            "legacyMarketType": "SPA",
+            "marketCapabilities": {
+                "capabilityName": {
+                    "capability": [
+                        "Voice",
+                        "HighSpeedInternet",
+                        "Video",
+                        "Wireless"
+                    ]
+                }
+            },
+            "marketID": "2623",
+            "marketName": "LATROBE, CITY OF, PA",
+            "parentMarketID": "2392"
+        },
+        "networkConnectivityInfo": {},
+        "postalAddress": {
+            "city": "PHILADELPHIA",
+            "country": "USA",
+            "houseNumber": "1701",
+            "state": "PA",
+            "streetName": "JFK",
+            "streetSuffix": "BLVD",
+            "unitTypes": {
+                "unitSequence": "1",
+                "unitType": "APT",
+                "unitValue": "300"
+            },
+            "zipCode": {
+                "zip4": "2838",
+                "zip5": "19103"
+            }
+        },
+        "billingDetailsInfo": {
+            "csgDetails": {
+                "cSGDetailsType": {
+                    "technicianArea": "91"
+                }
+            }
+        }
+    }
+}

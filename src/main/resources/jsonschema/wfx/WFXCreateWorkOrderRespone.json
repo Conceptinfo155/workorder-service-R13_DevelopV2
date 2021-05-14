@@ -1,0 +1,12 @@
+{
+  "type": "object",
+  "definitions": {},
+  "properties": {
+    "WorkOrderNum": {
+     "type": "string"
+    },
+    "Response": {
+      "type": "string"
+    }
+  }
+}

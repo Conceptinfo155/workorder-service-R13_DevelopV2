@@ -1,0 +1,11 @@
+{
+"UpdateWorkorderRequest": {
+  "WFXTechLogin": "0110556",
+  "Job": {
+   "DispatcherStatusCd": "X"
+  },
+  "JobLocation": {
+   "AddrId": "273127325"
+  }
+}
+}
